@@ -1,0 +1,10 @@
+﻿------ Build started: Project: abwonline.ca, Configuration: Debug Any CPU ------
+		abwonline.ca -> C:\Users\west_\source\Workspaces\ABW ONLINE DEVELOPMENT\abwonline.ca\bin\Debug\abwonline.ca.dll
+		abwonline.ca -> C:\Users\west_\source\Workspaces\ABW ONLINE DEVELOPMENT\abwonline.ca\bin\Debug\abwonline.ca.dacpac
+------ Deploy started: Project: abwonline.ca, Configuration: Debug Any CPU ------
+		Deployment script generated to:
+C:\Users\west_\source\Workspaces\ABW ONLINE DEVELOPMENT\abwonline.ca\bin\Debug\abwonline.ca.sql
+
+		Update complete.
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========
+========== Deploy: 1 succeeded, 0 failed, 0 skipped ==========

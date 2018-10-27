@@ -1,0 +1,1510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Metadata>
+  <SettingsTree>
+    <Setting URI="/">
+      <Type>Tree</Type>
+      <Name>HKKS</Name>
+      <Description></Description>
+      <Guid>{63218c37-6d00-5d23-8129-e84b2e74d04a}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement">
+      <Type>Tree</Type>
+      <Name>AccountManagement</Name>
+      <Description>Configure a HoloLens device for account management scenarios.</Description>
+      <Guid>{885fba34-bc7c-513d-b139-8395d92e19b1}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement/UserProfilePolicies">
+      <Type>Tree</Type>
+      <Name>UserProfilePolicies</Name>
+      <Description>Set options for profile lifetime mangement for shared or communal device scenarios.</Description>
+      <Guid>{64cbb44f-3fee-55a4-a874-d205e2abf457}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement/UserProfilePolicies/DeletionPolicy">
+      <Type>Int</Type>
+      <Name>DeletionPolicy</Name>
+      <Description>Configures when profiles will be deleted.</Description>
+      <Guid>{9cfe3ee2-90e5-5606-8caa-3fbfc720b7ae}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>2</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement/UserProfilePolicies/EnableProfileManager">
+      <Type>Bool</Type>
+      <Name>EnableProfileManager</Name>
+      <Description>Enable profile lifetime mangement for shared or communal device scenarios.</Description>
+      <Guid>{79c00b1d-1641-5469-ac70-8ce5b94332e6}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>False</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement/UserProfilePolicies/ProfileInactivityThreshold">
+      <Type>Int</Type>
+      <Name>ProfileInactivityThreshold</Name>
+      <Description>Start deleting profiles when they have not been logged on during the specified period, given as number of days.</Description>
+      <Guid>{0dedc9c0-c225-53df-b26c-4acf6a065e99}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>30</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement/UserProfilePolicies/StorageCapacityStartDeletion">
+      <Type>Int</Type>
+      <Name>StorageCapacityStartDeletion</Name>
+      <Description>Start deleting profiles when available storage capacity falls below this threshold, given as percent of total storage available for profiles. Profiles that have been inactive the longest will be deleted first.</Description>
+      <Guid>{16c183ff-4ba5-598f-975e-2d844020c99c}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>25</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>100</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AccountManagement/UserProfilePolicies/StorageCapacityStopDeletion">
+      <Type>Int</Type>
+      <Name>StorageCapacityStopDeletion</Name>
+      <Description>Stop deleting profiles when available storage capacity is brought up to this threshold, given as percent of total storage available for profiles.</Description>
+      <Guid>{3f39e3a1-2888-58c6-998d-e39e867eadaa}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>50</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>100</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Accounts">
+      <Type>Tree</Type>
+      <Name>Accounts</Name>
+      <Description></Description>
+      <Guid>{fbf487f3-cf8c-54e1-a070-45ddeb001ec4}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Accounts/Azure">
+      <Type>Tree</Type>
+      <Name>Azure</Name>
+      <Description>Bulk Enroll devices in Azure Active Directory.</Description>
+      <Guid>{cf4aa606-2615-5450-a1a1-d461bb286f56}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Accounts/Azure/Authority">
+      <Type>Text</Type>
+      <Name>Authority</Name>
+      <Description>The authority for the BPRT</Description>
+      <Guid>{02edf3f1-9ffd-5ee7-9baf-01064e68ce56}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Accounts/Azure/BPRT">
+      <Type>Text</Type>
+      <Name>BPRT</Name>
+      <Description>The bulk token for the linked account.</Description>
+      <Guid>{75bb65a7-15bd-579d-986a-b3eafec0f742}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Accounts/Users">
+      <Type>Map</Type>
+      <Name>Users</Name>
+      <Description>Add local users to the computer.</Description>
+      <Guid>{e309994b-3045-5394-98fd-b2b23071530d}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AssignedAccess">
+      <Type>Tree</Type>
+      <Name>AssignedAccess</Name>
+      <Description>Configure Assigned Access</Description>
+      <Guid>{3b8e38f4-ee07-580e-b847-ec0aac5b96bf}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AssignedAccess/AssignedAccessSettings">
+      <Type>Text</Type>
+      <Name>AssignedAccessSettings</Name>
+      <Description>Set account and app (by AUMID). Example: {"Account":"username", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}.</Description>
+      <Guid>{0c74ad84-33f9-5c93-867a-50a830ddf399}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/AssignedAccess/MultiAppAssignedAccessSettings">
+      <Type>Asset</Type>
+      <Name>MultiAppAssignedAccessSettings</Name>
+      <Description>Deploy Multi App Assigned Access configuration xml file to the device</Description>
+      <Guid>{fb0ecc16-e63b-50f7-9f76-22c078eb6414}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Certificates">
+      <Type>Tree</Type>
+      <Name>Certificates</Name>
+      <Description></Description>
+      <Guid>{0366b9c6-8fee-54ac-97ba-056e6c3e806c}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Certificates/CACertificates">
+      <Type>Map</Type>
+      <Name>CACertificates</Name>
+      <Description>Configure intermediate CA certificates on target device</Description>
+      <Guid>{8401557c-cad8-515c-bddf-4d3a66a387e3}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Certificates/ClientCertificates">
+      <Type>Map</Type>
+      <Name>ClientCertificates</Name>
+      <Description>Configure client certificates on target device</Description>
+      <Guid>{7aefb76e-dc33-58c7-9342-5cea2bda7d43}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Certificates/RootCertificates">
+      <Type>Map</Type>
+      <Name>RootCertificates</Name>
+      <Description>Configure root certificates on target device</Description>
+      <Guid>{c3ce0e10-cf9e-5663-875a-aa4fc45723fe}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Certificates/TrustedPeopleCertificates">
+      <Type>Map</Type>
+      <Name>TrustedPeopleCertificates</Name>
+      <Description>Configure certificates into trusted people store on target device</Description>
+      <Guid>{24fbc7cf-0575-52f3-afeb-eb4483f64121}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Certificates/TrustedProvisioners">
+      <Type>Map</Type>
+      <Name>TrustedProvisioners</Name>
+      <Description>CA certificates used for provisioning package trust.</Description>
+      <Guid>{e3d139ac-572c-5463-8d8f-a0ac096bc293}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles">
+      <Type>Tree</Type>
+      <Name>ConnectivityProfiles</Name>
+      <Description></Description>
+      <Guid>{636c026c-4982-58ee-ab85-898af0e02853}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/VPN">
+      <Type>Tree</Type>
+      <Name>VPN</Name>
+      <Description></Description>
+      <Guid>{08b70b8f-88a3-5cac-804f-8ee16d6cbb76}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/VPN/MTU">
+      <Type>Tree</Type>
+      <Name>MTU</Name>
+      <Description></Description>
+      <Guid>{c7ab72ac-789d-5e36-9eb4-2984add47085}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/VPN/MTU/PPPProtocolType">
+      <Type>Int</Type>
+      <Name>PPPProtocolType</Name>
+      <Description>Alwasys set VPN PPPProtocolType to 0x21 (33)</Description>
+      <Guid>{4c986fc9-afbd-56c5-896d-8562554b021c}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>33</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/VPN/MTU/ProtocolType">
+      <Type>Int</Type>
+      <Name>ProtocolType</Name>
+      <Description>Always set VPN ProtocolType to 0x800 (2048)</Description>
+      <Guid>{4f20e746-f245-526a-afdc-90cd796f2871}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>2048</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/VPN/MTU/TunnelMTU">
+      <Type>Int</Type>
+      <Name>TunnelMTU</Name>
+      <Description>Default value of TunnelMTU is 1400, the allowed range is 1 to 1500.</Description>
+      <Guid>{27bb9f54-58a9-5ce1-b53e-bc1ef39f0d36}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1400</Default>
+      <ValidationInfo>
+        <LowerBound>1</LowerBound>
+        <UpperBound>1500</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/VPN/VPNSetting">
+      <Type>Map</Type>
+      <Name>VPNSetting</Name>
+      <Description></Description>
+      <Guid>{723cfe6b-4d7c-5ad0-b553-325983769e50}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/WLAN">
+      <Type>Tree</Type>
+      <Name>WLAN</Name>
+      <Description></Description>
+      <Guid>{93f59a06-d9ea-5fe9-be19-ef9cb17eaff4}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/WLAN/Profiles">
+      <Type>AssetList</Type>
+      <Name>Profiles</Name>
+      <Description>Add WLAN profiles to configure wireless connectivity on the target device.</Description>
+      <Guid>{2351472c-1e8e-5cd6-962e-3ed62c058bfc}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/ConnectivityProfiles/WLAN/WLANSetting">
+      <Type>Map</Type>
+      <Name>WLANSetting</Name>
+      <Description></Description>
+      <Guid>{c4cb3553-4bc5-5f00-9c4a-e8b41588f023}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup">
+      <Type>Tree</Type>
+      <Name>DeveloperSetup</Name>
+      <Description></Description>
+      <Guid>{0a131ab1-afe9-5339-85b0-c2cbadd876fa}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup/DeveloperSetupSettings">
+      <Type>Tree</Type>
+      <Name>DeveloperSetupSettings</Name>
+      <Description></Description>
+      <Guid>{5e087d3f-5f88-5e3c-a2dd-4be9c534e77b}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup/DeveloperSetupSettings/EnableDeveloperMode">
+      <Type>Bool</Type>
+      <Name>EnableDeveloperMode</Name>
+      <Description>When set to TRUE, places the device in developer mode</Description>
+      <Guid>{0f904520-9b48-556a-9227-a0647feec28e}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>False</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup/WindowsDevicePortalSettings">
+      <Type>Tree</Type>
+      <Name>WindowsDevicePortalSettings</Name>
+      <Description></Description>
+      <Guid>{b2fba749-6971-5f3c-8512-119e0ba6aff8}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup/WindowsDevicePortalSettings/AuthenticationMode">
+      <Type>Int</Type>
+      <Name>AuthenticationMode</Name>
+      <Description>Specify how to authentication against the Windows Device Portal</Description>
+      <Guid>{b71c99a2-2e3b-5692-9358-eba1c8230010}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>2</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup/WindowsDevicePortalSettings/AuthenticationPassword">
+      <Type>Text</Type>
+      <Name>AuthenticationPassword</Name>
+      <Description>Specifies the password to use when authenticating with the Windows Device Portal</Description>
+      <Guid>{3c57b15c-bc1e-5fa1-9e39-b632e137021e}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/DeveloperSetup/WindowsDevicePortalSettings/AuthenticationUserName">
+      <Type>Text</Type>
+      <Name>AuthenticationUserName</Name>
+      <Description>Specifies the user name to use when authenticating with the Windows Device Portal</Description>
+      <Guid>{47515152-ed93-52c3-b9f2-26db2d0276b6}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/EditionUpgrade">
+      <Type>Tree</Type>
+      <Name>EditionUpgrade</Name>
+      <Description></Description>
+      <Guid>{adde2fab-c19c-5556-bf65-49010eb3fa41}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/EditionUpgrade/UpgradeEditionWithLicense">
+      <Type>Asset</Type>
+      <Name>UpgradeEditionWithLicense</Name>
+      <Description>Enable an edition upgrade of Windows 10 devices. Does not require reboot.</Description>
+      <Guid>{58e117ff-32d0-56fc-82fa-32bc6b363e4a}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience">
+      <Type>Tree</Type>
+      <Name>FirstExperience</Name>
+      <Description></Description>
+      <Guid>{c3388b13-a405-5b2f-aa0f-d29bcf337a8f}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience/HoloLens">
+      <Type>Tree</Type>
+      <Name>HoloLens</Name>
+      <Description></Description>
+      <Guid>{8b49eb84-ce48-5536-a1da-5f414622129a}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience/HoloLens/PreferredRegion">
+      <Type>Int</Type>
+      <Name>PreferredRegion</Name>
+      <Description>Defines the Geo ID of a region that should be configured by the HoloLens First Experience</Description>
+      <Guid>{ffa795d1-904e-5818-8d44-6aae1ed43f5a}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience/HoloLens/PreferredTimezone">
+      <Type>Text</Type>
+      <Name>PreferredTimezone</Name>
+      <Description>Defines a preselected timezone that should be configured by the HoloLens First Experience</Description>
+      <Guid>{6d680319-3657-5b31-b56d-99ffe0ede3e8}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience/HoloLens/SkipCalibration">
+      <Type>Bool</Type>
+      <Name>SkipCalibration</Name>
+      <Description>When set to TRUE, hides the calibration section in the HoloLens First Experience</Description>
+      <Guid>{2ac5302f-e4d9-5884-9ea2-620736eb09cd}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>False</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience/HoloLens/SkipTraining">
+      <Type>Bool</Type>
+      <Name>SkipTraining</Name>
+      <Description>When set to TRUE, hides the Gesture, Gaze and Voice training sections in the HoloLens First Experience</Description>
+      <Guid>{e39bfb2c-078a-5152-a8d1-db0e402ba790}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>False</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/FirstExperience/HoloLens/SkipWifi">
+      <Type>Bool</Type>
+      <Name>SkipWifi</Name>
+      <Description>When set to TRUE, hides the Wi-Fi section in the HoloLens First Experience</Description>
+      <Guid>{b60059be-115f-5b9f-b092-bac3f2157630}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>False</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies">
+      <Type>Tree</Type>
+      <Name>Policies</Name>
+      <Description></Description>
+      <Guid>{9b74d508-8205-5385-ad0a-bfedee68827e}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Accounts">
+      <Type>Tree</Type>
+      <Name>Accounts</Name>
+      <Description></Description>
+      <Guid>{c67ec4f2-1a1c-5b47-8669-0325fe7a5369}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Accounts/AllowMicrosoftAccountConnection">
+      <Type>Int</Type>
+      <Name>AllowMicrosoftAccountConnection</Name>
+      <Description></Description>
+      <Guid>{e09fa825-fbfc-55fb-87b3-c0a218b04ccb}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/ApplicationManagement">
+      <Type>Tree</Type>
+      <Name>ApplicationManagement</Name>
+      <Description></Description>
+      <Guid>{1aa766df-7515-56f1-b28e-aa2f6d50c8ae}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/ApplicationManagement/AllowDeveloperUnlock">
+      <Type>Int</Type>
+      <Name>AllowDeveloperUnlock</Name>
+      <Description></Description>
+      <Guid>{a6ca991a-2407-5565-a577-f30f9548d438}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Authentication">
+      <Type>Tree</Type>
+      <Name>Authentication</Name>
+      <Description></Description>
+      <Guid>{69186db5-039a-527c-84c1-7574b88fff62}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Authentication/AllowFastReconnect">
+      <Type>Int</Type>
+      <Name>AllowFastReconnect</Name>
+      <Description></Description>
+      <Guid>{2bb2b928-3a43-53d2-b264-e8fa1096516b}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth">
+      <Type>Tree</Type>
+      <Name>Bluetooth</Name>
+      <Description></Description>
+      <Guid>{ac23bc48-f963-5bbf-928d-bab2c96f83af}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth/AllowAdvertising">
+      <Type>Int</Type>
+      <Name>AllowAdvertising</Name>
+      <Description></Description>
+      <Guid>{f176d533-d2a0-5ae1-9903-f0308cbaf5aa}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth/AllowDiscoverableMode">
+      <Type>Int</Type>
+      <Name>AllowDiscoverableMode</Name>
+      <Description></Description>
+      <Guid>{88570079-8630-5f7e-a3dc-9674e013f0f3}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth/AllowPrepairing">
+      <Type>Int</Type>
+      <Name>AllowPrepairing</Name>
+      <Description></Description>
+      <Guid>{e5d30f39-27d1-5c51-8c8d-df0e1d522cfa}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth/AllowPromptedProximalConnections">
+      <Type>Int</Type>
+      <Name>AllowPromptedProximalConnections</Name>
+      <Description>This policy lets you decide whether to allow Windows to prompt users when certain Bluetooth devices are connectable and in range of the user's device.</Description>
+      <Guid>{890bffa7-850e-5697-9b68-179d2fef7994}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth/LocalDeviceName">
+      <Type>Text</Type>
+      <Name>LocalDeviceName</Name>
+      <Description></Description>
+      <Guid>{af836f87-59bf-513c-b1f3-f621a23f18e0}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Bluetooth/ServicesAllowedList">
+      <Type>Text</Type>
+      <Name>ServicesAllowedList</Name>
+      <Description></Description>
+      <Guid>{78975ee9-c49e-525e-9eb3-9a828d4ea24c}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Browser">
+      <Type>Tree</Type>
+      <Name>Browser</Name>
+      <Description></Description>
+      <Guid>{a4684666-e5a6-5148-a348-54975eedbafa}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Browser/AllowPopups">
+      <Type>Int</Type>
+      <Name>AllowPopups</Name>
+      <Description>This setting lets you decide whether to turn on Pop-up Blocker and whether to allow pop-ups to appear in secondary windows.</Description>
+      <Guid>{1ec2e6ee-ad3b-5e81-8005-c93919b51038}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Camera">
+      <Type>Tree</Type>
+      <Name>Camera</Name>
+      <Description></Description>
+      <Guid>{794d7876-b043-538e-80ba-56ecfa44980c}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Camera/AllowCamera">
+      <Type>Int</Type>
+      <Name>AllowCamera</Name>
+      <Description></Description>
+      <Guid>{eb750756-0849-5734-874a-1346fcdf1448}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Connectivity">
+      <Type>Tree</Type>
+      <Name>Connectivity</Name>
+      <Description></Description>
+      <Guid>{773db17b-5373-5b1f-b6b9-c37584dc8d3e}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Connectivity/AllowBluetooth">
+      <Type>Int</Type>
+      <Name>AllowBluetooth</Name>
+      <Description></Description>
+      <Guid>{dcd1e00c-1fbb-517b-aca8-3ed45271d60b}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>2</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock">
+      <Type>Tree</Type>
+      <Name>DeviceLock</Name>
+      <Description></Description>
+      <Guid>{143cde79-d8bf-5624-a8d4-42850f4665c7}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/AllowSimpleDevicePassword">
+      <Type>Int</Type>
+      <Name>AllowSimpleDevicePassword</Name>
+      <Description></Description>
+      <Guid>{3787931c-40e1-559e-b456-586610ce5683}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/AlphanumericDevicePasswordRequired">
+      <Type>Int</Type>
+      <Name>AlphanumericDevicePasswordRequired</Name>
+      <Description></Description>
+      <Guid>{33a9452d-d701-5d83-a418-26e46ede5ccb}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>2</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>2</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/DevicePasswordEnabled">
+      <Type>Int</Type>
+      <Name>DevicePasswordEnabled</Name>
+      <Description></Description>
+      <Guid>{8aa3d5ca-4a8b-5d03-ae05-00d6533ffa85}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/DevicePasswordExpiration">
+      <Type>Int</Type>
+      <Name>DevicePasswordExpiration</Name>
+      <Description>An integer value specifying the number of days before password expiration.</Description>
+      <Guid>{87cfbffa-cfc2-54bb-8868-af1e5f1fde0a}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>730</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/DevicePasswordHistory">
+      <Type>Int</Type>
+      <Name>DevicePasswordHistory</Name>
+      <Description>An integer value specifying the number of passwords stored in history that can't be reused.</Description>
+      <Guid>{95c8b08e-6817-533e-837d-5e1fb8fc5a03}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>50</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/MaxDevicePasswordFailedAttempts">
+      <Type>Int</Type>
+      <Name>MaxDevicePasswordFailedAttempts</Name>
+      <Description>An integer value that specifies the number of authentication failures allowed before the device will be wiped.</Description>
+      <Guid>{1924e40c-b95c-5cae-aa83-fe65ff62494b}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>999</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/MinDevicePasswordComplexCharacters">
+      <Type>Int</Type>
+      <Name>MinDevicePasswordComplexCharacters</Name>
+      <Description>An integer value that specifies the number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong password.</Description>
+      <Guid>{80ae93e1-c1be-558c-a474-886e4f451e88}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>1</LowerBound>
+        <UpperBound>4</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/DeviceLock/MinDevicePasswordLength">
+      <Type>Int</Type>
+      <Name>MinDevicePasswordLength</Name>
+      <Description>An integer value that specifies the minimum number of characters required in the PIN.</Description>
+      <Guid>{9c544c0a-ae3e-5fd0-8c3e-5047a8349f21}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>4</Default>
+      <ValidationInfo>
+        <LowerBound>4</LowerBound>
+        <UpperBound>18</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Experience">
+      <Type>Tree</Type>
+      <Name>Experience</Name>
+      <Description></Description>
+      <Guid>{a884c9e4-132f-5a59-ae8c-ed1f64706673}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Experience/AllowCortana">
+      <Type>Int</Type>
+      <Name>AllowCortana</Name>
+      <Description></Description>
+      <Guid>{a6039d0d-1257-5c1e-a086-b017b4b9cbeb}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Experience/AllowManualMDMUnenrollment">
+      <Type>Int</Type>
+      <Name>AllowManualMDMUnenrollment</Name>
+      <Description></Description>
+      <Guid>{b47d1a26-4b61-5850-aac6-6102d6d8edea}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Privacy">
+      <Type>Tree</Type>
+      <Name>Privacy</Name>
+      <Description></Description>
+      <Guid>{319e60cb-47c0-59f1-889b-9805b9da6662}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Privacy/AllowInputPersonalization">
+      <Type>Int</Type>
+      <Name>AllowInputPersonalization</Name>
+      <Description></Description>
+      <Guid>{b1dd7065-7c29-5cf1-9df0-a0bc4bd6b4be}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Search">
+      <Type>Tree</Type>
+      <Name>Search</Name>
+      <Description></Description>
+      <Guid>{fbcfbeb1-760e-5f5e-8b28-87a99662208a}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Search/AllowSearchToUseLocation">
+      <Type>Int</Type>
+      <Name>AllowSearchToUseLocation</Name>
+      <Description></Description>
+      <Guid>{1f045472-49a4-5864-ae68-5d8628df5c4a}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Security">
+      <Type>Tree</Type>
+      <Name>Security</Name>
+      <Description></Description>
+      <Guid>{1df1bb7e-1f43-5473-99a6-eb130282f9e6}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Security/RequireDeviceEncryption">
+      <Type>Int</Type>
+      <Name>RequireDeviceEncryption</Name>
+      <Description></Description>
+      <Guid>{50cf81d8-1eab-57aa-bcd4-5b001679cad4}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Settings">
+      <Type>Tree</Type>
+      <Name>Settings</Name>
+      <Description></Description>
+      <Guid>{b854b9eb-b43d-50a0-9cb8-961585a0dd3a}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Settings/AllowVPN">
+      <Type>Int</Type>
+      <Name>AllowVPN</Name>
+      <Description></Description>
+      <Guid>{7f4fc184-c2cb-5d36-b3f0-904f70373770}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/System">
+      <Type>Tree</Type>
+      <Name>System</Name>
+      <Description></Description>
+      <Guid>{93c6822f-97ba-5091-a608-8cf5defe9a67}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/System/AllowLocation">
+      <Type>Int</Type>
+      <Name>AllowLocation</Name>
+      <Description></Description>
+      <Guid>{35529e5b-7770-5f2c-869f-609897c81d51}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/System/AllowTelemetry">
+      <Type>Int</Type>
+      <Name>AllowTelemetry</Name>
+      <Description>This policy setting determines the amount of diagnostic data reported to Microsoft. A value of 0 indicates that no telemetry data from OS components is sent to Microsoft. Setting a value of 0 is applicable to enterprise and server devices only. Setting a value of 0 for other devices is equivalent to choosing a value of 1. A value of 1 sends only a limited, or basic, amount of diagnostic data. Note that setting values of 0 or 1 will degrade certain experiences on the device. A value of 2 sends enhanced diagnostic data. A value of 3 sends the same data as a value of 2, plus additional diagnostics data, such as the system state at the time of a hang or crash, and the files and content that may have caused the problem. If you disable or do not configure this policy setting, users can configure the Telemetry level in Settings.</Description>
+      <Guid>{ed4b6965-3486-5cc0-98f8-c89bc9e39bcc}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>3</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>3</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update">
+      <Type>Tree</Type>
+      <Name>Update</Name>
+      <Description></Description>
+      <Guid>{f6e78b73-0663-5fce-99f2-da63501aa673}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/AllowAutoUpdate">
+      <Type>Int</Type>
+      <Name>AllowAutoUpdate</Name>
+      <Description></Description>
+      <Guid>{993d53a2-de74-5f82-85f3-e3fcfcab308e}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>2</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>5</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/AllowMUUpdateService">
+      <Type>Int</Type>
+      <Name>AllowMUUpdateService</Name>
+      <Description></Description>
+      <Guid>{3d211691-9d42-50f5-8374-401ed514354a}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/AllowUpdateService">
+      <Type>Int</Type>
+      <Name>AllowUpdateService</Name>
+      <Description></Description>
+      <Guid>{c3049db0-f9ec-5c53-a827-b2217ea2db7d}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/BranchReadinessLevel">
+      <Type>Int</Type>
+      <Name>BranchReadinessLevel</Name>
+      <Description>Set which branch to receive updates from.</Description>
+      <Guid>{cf9eee8d-dcfa-59dc-9729-d1efc5e65754}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>16</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/DeferUpdatePeriod">
+      <Type>Int</Type>
+      <Name>DeferUpdatePeriod</Name>
+      <Description>Defers Quality Updates for the specified number of weeks.</Description>
+      <Guid>{483bac2b-0ef4-52aa-b1fb-f3ee74c275a7}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>4</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/DeferUpgradePeriod">
+      <Type>Int</Type>
+      <Name>DeferUpgradePeriod</Name>
+      <Description>Defers Feature Updates for the specified number of months.</Description>
+      <Guid>{9ef0ede1-28c1-522a-8707-feceb01a39f7}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>8</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/DetectionFrequency">
+      <Type>Int</Type>
+      <Name>DetectionFrequency</Name>
+      <Description>Specify the Automatic Updates detection frequency.</Description>
+      <Guid>{52940a81-e9f3-56f1-853b-a9a4608b87fd}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>22</Default>
+      <ValidationInfo>
+        <LowerBound>1</LowerBound>
+        <UpperBound>22</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ManagePreviewBuilds">
+      <Type>Int</Type>
+      <Name>ManagePreviewBuilds</Name>
+      <Description>Set the behavior for receiving preview builds.</Description>
+      <Guid>{8ef4a351-bc87-5541-a6ab-f4d1c3dcde77}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>3</Default>
+      <ValidationInfo />
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/RequireDeferUpgrade">
+      <Type>Int</Type>
+      <Name>RequireDeferUpgrade</Name>
+      <Description></Description>
+      <Guid>{b7f9ce6e-f5ab-5858-b162-57fd9ac05392}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallDay">
+      <Type>Int</Type>
+      <Name>ScheduledInstallDay</Name>
+      <Description></Description>
+      <Guid>{fd24506a-28e6-59e1-84cd-af0f9dd1d7cb}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>7</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallEveryWeek">
+      <Type>Int</Type>
+      <Name>ScheduledInstallEveryWeek</Name>
+      <Description>Every week of the month for installs to take place.</Description>
+      <Guid>{ba66068d-5993-5257-b1f7-097d29709ec8}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>1</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallFirstWeek">
+      <Type>Int</Type>
+      <Name>ScheduledInstallFirstWeek</Name>
+      <Description>First week of the month for installs to take place.</Description>
+      <Guid>{6ce90324-2c6d-5274-a008-35d5ae5bec2f}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallFourthWeek">
+      <Type>Int</Type>
+      <Name>ScheduledInstallFourthWeek</Name>
+      <Description>Fourth week of the month for installs to take place.</Description>
+      <Guid>{cd34445a-aac1-5d05-96c7-5b85bb8908ac}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallSecondWeek">
+      <Type>Int</Type>
+      <Name>ScheduledInstallSecondWeek</Name>
+      <Description>Second week of the month for installs to take place.</Description>
+      <Guid>{1cd8fd6f-ee45-5136-8234-9b6fc49c001c}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallThirdWeek">
+      <Type>Int</Type>
+      <Name>ScheduledInstallThirdWeek</Name>
+      <Description>Third week of the month for installs to take place.</Description>
+      <Guid>{d4b3f43b-006d-5a54-a998-80d2eef1b86c}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/ScheduledInstallTime">
+      <Type>Int</Type>
+      <Name>ScheduledInstallTime</Name>
+      <Description>Hour of the day for installs to take place, 0 is midnight.</Description>
+      <Guid>{c908b96f-580e-566e-bc0f-11f7eb6c2545}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>3</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>23</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/UpdateServiceUrl">
+      <Type>Text</Type>
+      <Name>UpdateServiceUrl</Name>
+      <Description></Description>
+      <Guid>{5f3d69f0-6e03-5e48-a36e-dfc9a1c40edd}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>CorpWSUS</Default>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/Update/UpdateServiceUrlAlternate">
+      <Type>Text</Type>
+      <Name>UpdateServiceUrlAlternate</Name>
+      <Description></Description>
+      <Guid>{dca8d7d4-6708-5c8c-97d4-129a761d6a2f}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/WiFi">
+      <Type>Tree</Type>
+      <Name>WiFi</Name>
+      <Description></Description>
+      <Guid>{3fec4f3a-9274-57f3-9e27-cd757f0b7b76}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/Policies/WiFi/WLANScanMode">
+      <Type>Int</Type>
+      <Name>WLANScanMode</Name>
+      <Description></Description>
+      <Guid>{5e9b65ae-c55b-5b1d-aa81-2b706a1366bd}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <Default>0</Default>
+      <ValidationInfo>
+        <LowerBound>0</LowerBound>
+        <UpperBound>1000</UpperBound>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/UniversalAppInstall">
+      <Type>Tree</Type>
+      <Name>UniversalAppInstall</Name>
+      <Description>Install Universal Applications from the Store or Hosted location</Description>
+      <Guid>{df61ebac-70e8-5f97-b598-2948a08d3a6a}</Guid>
+      <IsLeaf>False</IsLeaf>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/UniversalAppInstall/StoreInstall">
+      <Type>Map</Type>
+      <Name>StoreInstall</Name>
+      <Description></Description>
+      <Guid>{0fc75268-a34f-557a-b410-5059da16fa10}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/UniversalAppInstall/UserContextApp">
+      <Type>Map</Type>
+      <Name>UserContextApp</Name>
+      <Description></Description>
+      <Guid>{0943d1c4-e8a3-53e1-aa22-32c8040b5812}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+    <Setting URI="/UniversalAppInstall/UserContextAppLicense">
+      <Type>Map</Type>
+      <Name>UserContextAppLicense</Name>
+      <Description></Description>
+      <Guid>{e8108278-8d39-5811-8a25-5dd96553e702}</Guid>
+      <IsLeaf>True</IsLeaf>
+      <ValidationInfo>
+        <MinimumLength>0</MinimumLength>
+        <MaximumLength>-1</MaximumLength>
+        <Pattern></Pattern>
+      </ValidationInfo>
+      <AppearsIn>
+        <Windows Edition="Unknown" Version="Unknown" Component="" />
+      </AppearsIn>
+    </Setting>
+  </SettingsTree>
+</Metadata>

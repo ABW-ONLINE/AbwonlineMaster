@@ -1,0 +1,24 @@
+// JavaScript source code
+# Load WinSCP .NET assembly
+ADD-Type -Path "winscp-dav://https%3A%2F%2F/;save"
+Add-Type -Path "WinSCPnet.dll"
+
+# Set up session options
+$sessionOptions = New-Object WinSCP.SessionOptions -Property @{
+    {	Protocol = [WinSCP.Protocol]::Webdav
+		<HostName> = "https://abwonline.ca"
+		<PortNumber> = 80
+	}
+
+$session = New-Object WinSCP.Session
+
+try
+{
+    #<Connect>    $session.Open($sessionOptions)
+
+    # 'https:abwonline/home'publi_html[1]ssh'
+}
+finally
+{Your code
+    $session.Dispose()
+}

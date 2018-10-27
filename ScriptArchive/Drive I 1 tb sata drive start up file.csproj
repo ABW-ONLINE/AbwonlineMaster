@@ -1,0 +1,526 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{61F95E1A-0E47-436C-A4DB-75F7E21AD559}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Drive_I_1_tb_sata_drive_start_up_file</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\objects\00\1a0d9d1b3bef22f3cc63272d910644c4484dba" />
+    <None Include=".git\objects\01\aee31e6f7c26afa8a7622b07909dfa9bfc2fc3" />
+    <None Include=".git\objects\03\0fc506ca3045434042466c7512a33435a800a6" />
+    <None Include=".git\objects\03\3d7a5e9e2266753180f4e3a9299f575046701e" />
+    <None Include=".git\objects\0a\ad6ffc0657a23d76efb7840ef414cf5f9146a5" />
+    <None Include=".git\objects\12\3bc2d969a736ca8b4701f3239dc0f993562811" />
+    <None Include=".git\objects\13\e0042a7c8500c54fc24f85d11a982ca998bc43" />
+    <None Include=".git\objects\15\34e78cc8b2394cb059dc3c4fc81d818b58b673" />
+    <None Include=".git\objects\17\df91981375c959877a62c5af0d277ee6b652fe" />
+    <None Include=".git\objects\1c\dbf51dfb6989930b84771cbd53743bdda8b6bf" />
+    <None Include=".git\objects\1e\f96ecf5c0f7bbb4a50ab204d407186069131da" />
+    <None Include=".git\objects\1f\941409848940596971f0936a17fa1341cab3f6" />
+    <None Include=".git\objects\1f\a467f8574c81a37f8182bff854bba46374ffa3" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\20\b68fb980eff0f9473c102d64d40b8cb62a1385" />
+    <None Include=".git\objects\21\5d8c9cee275c05218fa13461b3fadf786e8759" />
+    <None Include=".git\objects\22\75c76acafff7bbaf0c38583d5d95af5481fac8" />
+    <None Include=".git\objects\27\52777b03fb85324239ee01eb995ff84b87ac3c" />
+    <None Include=".git\objects\28\af4f7f927ce8f0f000a398e7f13b08da4fe9b8" />
+    <None Include=".git\objects\2e\70522d4ab2341c4399e1d497233751a2aa0010" />
+    <None Include=".git\objects\2f\a0ad2220116116b0ce5a1eeff63a9dc345d836" />
+    <None Include=".git\objects\30\43f399926ce40af27376aad259c604c9bafce9" />
+    <None Include=".git\objects\30\b605a8681528230d5e4d390b94383a4cc102c7" />
+    <None Include=".git\objects\35\e86f74cf720bcf5973598d261608262a49b504" />
+    <None Include=".git\objects\37\d9b8038d8c6f683836181ecea095dcbbf2e370" />
+    <None Include=".git\objects\38\b5f1b180fd2f18e28eeb451ab20169e5511a04" />
+    <None Include=".git\objects\38\c03d44bac28900192e9113d82dd3b253c00846" />
+    <None Include=".git\objects\39\c10ee9151c004bc83928e9a87d7de6959b4a08" />
+    <None Include=".git\objects\39\d141c602b1986451ed3f52f9ceca35f413e7ba" />
+    <None Include=".git\objects\3a\141bd35801d4628390d119908dcecbf8d0ebdb" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\3d\32a53c9e9b653deb9ebf20e75f6b2e95d02d81" />
+    <None Include=".git\objects\41\3b9000b9a032aa7674e107cfe4f8dc1adfed83" />
+    <None Include=".git\objects\42\05be09261b7c95cff0741a767771dfa9f4e63d" />
+    <None Include=".git\objects\44\ac0ca8384748c1b96e5a97ec281c657c0dc24c" />
+    <None Include=".git\objects\46\94c1a04c43c1efba1fd7d9078eed3b93c1d40e" />
+    <None Include=".git\objects\49\2840e9d57d325f46b144bb9933341a6f80afbf" />
+    <None Include=".git\objects\4d\1179a858b19e7b76133759ecc9dc0a27489fa4" />
+    <None Include=".git\objects\4e\67e92e6fe286256f06b2e9b4e6263071a8ba70" />
+    <None Include=".git\objects\50\0204c44606a4a6c327073fb9dab713706e242a" />
+    <None Include=".git\objects\50\7c91dd555fc3e302b3d793caf50cc6dbdfaa38" />
+    <None Include=".git\objects\51\1c1866aa4fb747842d7d3eb17a1a2a7fe1365c" />
+    <None Include=".git\objects\53\2b03003952472b6c4b62acfa948c9dd31cefda" />
+    <None Include=".git\objects\53\7d0fb9c0a21708295ae7a2400072fef1a939ad" />
+    <None Include=".git\objects\59\c16d511e4da80fd8391995d335c75c621a9bb7" />
+    <None Include=".git\objects\5a\ac5528f597fa01ceecfcaf3dee7a36358a81df" />
+    <None Include=".git\objects\5c\079ff7e7c9750e8d7272863fca3c94282a8c4a" />
+    <None Include=".git\objects\5c\99e597258f2e4513156ed66ce8210dd27c5047" />
+    <None Include=".git\objects\5e\1e9aa36294faeaa04b6af4cd9e7a14e6690fca" />
+    <None Include=".git\objects\62\e80c986cdd4479e95bd4a674505856460d6715" />
+    <None Include=".git\objects\67\c2e3c7b7b394606a90c6b8ab73acff4c9280e5" />
+    <None Include=".git\objects\69\9432872106b25c6971cfe09ee77ad4def0c654" />
+    <None Include=".git\objects\6d\b0ed2792c2d5278b64fc9fddc12ac35f97d375" />
+    <None Include=".git\objects\6d\b57fce62de8759e40d9868662cba18d7cde3fa" />
+    <None Include=".git\objects\70\e0e3b52fb98d45e2c24a7dac6c70a45d998ec6" />
+    <None Include=".git\objects\72\6cc603a74833f9724d595f7d0484e1230411aa" />
+    <None Include=".git\objects\73\1f6de6c291e303814b02808f34140fe560e8e4" />
+    <None Include=".git\objects\74\82cd0c0cc1dfd440629c606d3e2ad4dfedbbea" />
+    <None Include=".git\objects\75\8895def250c4f622eef515e9cd04fd155619a9" />
+    <None Include=".git\objects\79\1cfb6dd487551d2ed992fa6c4b4f11ca88b782" />
+    <None Include=".git\objects\79\78d0b20ccbb5f99cc0c1f1438fa13767e03fee" />
+    <None Include=".git\objects\7a\3f6a74f5c80b4c0adb7467084e048a740121a1" />
+    <None Include=".git\objects\7b\16218b7084ecebf1b8df561ae8100ffaa9651a" />
+    <None Include=".git\objects\7d\bdecb37db4c6aa048a39164312b14efb908987" />
+    <None Include=".git\objects\7e\99b17acf4fdc23807a4f47d5eef4c8928dee64" />
+    <None Include=".git\objects\83\de7a5bf8ec0ce8e241d0b0362fa201f3f0bc48" />
+    <None Include=".git\objects\84\df717ba94a1feb86cdd8e8769f0893594dbfe8" />
+    <None Include=".git\objects\85\82979dc48ae85b75280e07200dcd93769c3b7f" />
+    <None Include=".git\objects\85\b890b3c66b9beee248abaddd2ec71f8b1df2b2" />
+    <None Include=".git\objects\87\5798b6bd8bb684475a867b231e05cb04bf38d6" />
+    <None Include=".git\objects\87\5c692a2251c5c280872746fa0e24dbc240c32c" />
+    <None Include=".git\objects\87\604e7832534db2fcdc6f22973cd21fc11f202b" />
+    <None Include=".git\objects\88\a3182184cf7a62f452a8b1a3d20f15ad62216d" />
+    <None Include=".git\objects\88\dd01c78a618d0cc7dbd9432b8267ed2ada0a6f" />
+    <None Include=".git\objects\89\bb234d79dff4ee2f14763d4e1f150cb85c079a" />
+    <None Include=".git\objects\8d\475818784db74f55a13af206fd1dd25b5bede9" />
+    <None Include=".git\objects\8f\d385fa0b181b40bc22bd0d063d8078592d4bc2" />
+    <None Include=".git\objects\90\9eaa54137c192d0d024aa25f279576bc549367" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\93\61169c4b8383973ffab5cb12ed91d4b5daefd7" />
+    <None Include=".git\objects\96\b422090eef8d7aa3f1761b344f30c2988c64c5" />
+    <None Include=".git\objects\97\d8c98424c3e575e437c8f1d77f5251e41117cf" />
+    <None Include=".git\objects\9d\8daba0c83838505240a716cd3aee984ad97e74" />
+    <None Include=".git\objects\9d\b52f61559efa7f172d6f816a202167e619c62b" />
+    <None Include=".git\objects\9d\cf0c8099aa71bc50144a570231ce4e42a4bde7" />
+    <None Include=".git\objects\a0\e87d5129a8031786cabbb0d3afa3a0148022f8" />
+    <None Include=".git\objects\a3\2d6191f8dd8cd9f678ef1610e2bc0f7bbd6e31" />
+    <None Include=".git\objects\a5\4fbc45cb08ae5578c00eaecfbe3f673ace65ca" />
+    <None Include=".git\objects\a6\c4e541892d65773ee075ecc7b8175c37d89ad1" />
+    <None Include=".git\objects\a8\510ad4df3cfe0837dbb992f72e448c6f9c2c56" />
+    <None Include=".git\objects\aa\80a2198b7acd5e08b2842c90a20d928e569430" />
+    <None Include=".git\objects\ad\0cade34098815e8424871279df923027e64a7f" />
+    <None Include=".git\objects\ae\b5804db297d0444c1a93f7a34e76f613e29d54" />
+    <None Include=".git\objects\af\269ab1cebef23915f01dd73dc016962368b5ca" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\b6\1bd535fc265dd29a38af3367d88319daa12849" />
+    <None Include=".git\objects\b6\4c18ee487ef4e02f304258d9e8b7b99086ec62" />
+    <None Include=".git\objects\b7\8b78c949766083e3bf425141740306811e57a8" />
+    <None Include=".git\objects\b8\55fae2ffb11ad0625d46c2e08fc201d3321feb" />
+    <None Include=".git\objects\bb\ea4470bfd6e39e4593032baf0488355ea394c3" />
+    <None Include=".git\objects\c1\e813328fc46fddec08d55282c9a513196b08ed" />
+    <None Include=".git\objects\c2\e9cd0f697e43a14d76b54ea9096dd3fe12e9d0" />
+    <None Include=".git\objects\c8\c627c30a2d3f8ac246cb9129c245bf3963c6b1" />
+    <None Include=".git\objects\c9\0b15684af40a6e95b372e77719e20cab1c5a6a" />
+    <None Include=".git\objects\ca\44e8e699bd6e82f979a94ffb5698531e4576e7" />
+    <None Include=".git\objects\ca\c9d965ceef08d7334e363f31b0fdef838cec5a" />
+    <None Include=".git\objects\cc\e21287f42765a6ed0e673f71154a146e4845a6" />
+    <None Include=".git\objects\d2\7e8fbbbbbf19ff925d276c9865c4e051b6a6c5" />
+    <None Include=".git\objects\d6\54d6b43bc81c0fb1034586c1f47afd5ccc4e54" />
+    <None Include=".git\objects\d7\aca93f398f6b2cdb99400b44487ca75b99861b" />
+    <None Include=".git\objects\d9\031429f578a67a965ad13e8e7caf2c0d56f09f" />
+    <None Include=".git\objects\e0\ce1270915849b77d3c0a4e51011352ea0dc8bb" />
+    <None Include=".git\objects\e3\3820633a2fc6df3841b4cfb3dc91c83cf6d7f3" />
+    <None Include=".git\objects\e3\f983f5b7b53c72d9d884bafe5e2327e6658091" />
+    <None Include=".git\objects\e4\0f8f2ff0bbc7a2fc8bebd7dba07a8f06a8a1e2" />
+    <None Include=".git\objects\e4\45e06a9892affc14596dd6478d0a76a11bc316" />
+    <None Include=".git\objects\e4\853147eb5da43d71508400ae9a316495eae0f1" />
+    <None Include=".git\objects\e5\e9dd527f34decb119c99293a447b15ef55f2ac" />
+    <None Include=".git\objects\e6\2f1a53381ed9956a702f0cb42ae55f25b776e1" />
+    <None Include=".git\objects\e6\8b59d644ec0e52c3936118f01ac80c38435b8c" />
+    <None Include=".git\objects\e9\933cafbacb07abf28cec86649ba8dec1498279" />
+    <None Include=".git\objects\ed\0d47af726b2b128dfed0b6220e0f7869afafc7" />
+    <None Include=".git\objects\ee\483e3bfe66e55f2ae5a74eb0d7855a12926f38" />
+    <None Include=".git\objects\f7\36dd9fc3dfeb2c54418772870fbbfa6330d3b5" />
+    <None Include=".git\objects\fb\f0387404547aecdf8808a8d9a57f5aaa42298f" />
+    <None Include=".git\objects\fd\365a54e8837c9d7440e6ef6ab1c16a89811e8a" />
+    <None Include=".git\objects\fe\36b1d2df7c2c06aaa78f0feb54e4b6adac4dfc" />
+    <None Include=".git\objects\fe\bd23345b9ef9588296ed78799c2ea58b79d23f" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".vs\abwonline.ca ass kicker\v15\.suo" />
+    <None Include=".vs\abwonline.ca ass kicker\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\abwonline.ca ass kicker\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\abwonline.ca ass kicker\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\abwonline.ca ass kicker\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="abwonline.ca app master\App.config" />
+    <None Include="abwonline.ca app master\My Project\Settings.settings" />
+    <None Include="abwonline.ca app master\obj\Debug\abwonline.ca app master.vbproj.CoreCompileInputs.cache" />
+    <None Include="abwonline.ca app master\obj\Debug\abwonline.ca app master.vbproj.GenerateResource.cache" />
+    <None Include="abwonline.ca app master\obj\Debug\abwonline.ca app master.vbprojAssemblyReference.cache" />
+    <None Include="abwonline.ca app master\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="abwonline.ca app master\obj\Release\abwonline.ca app master.vbproj.CoreCompileInputs.cache" />
+    <None Include="abwonline.ca app master\obj\Release\abwonline.ca app master.vbprojAssemblyReference.cache" />
+    <None Include="abwonline.ca ass kicker_TemporaryKey.pfx" />
+    <None Include="ClassLibrary1\.gitattributes" />
+    <None Include="ClassLibrary1\.gitignore" />
+    <None Include="ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache" />
+    <None Include="ClassLibrary1\ClassLibrary1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary2\ClassLibrary2\.editorconfig" />
+    <None Include="ClassLibrary2\ClassLibrary2\My Project\DataSources\ClassLibrary2.My.MySettings.datasource" />
+    <None Include="ClassLibrary2\ClassLibrary2\My Project\Settings.settings" />
+    <None Include="ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.vbproj.GenerateResource.cache" />
+    <None Include="ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.vbprojAssemblyReference.cache" />
+    <None Include="ClassLibrary2\ClassLibrary2\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="ClassLibrary2\ClassLibrary2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary3\ClassLibrary3\My Project\Settings.settings" />
+    <None Include="ClassLibrary3\ClassLibrary3\obj\Debug\ClassLibrary3.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary3\ClassLibrary3\obj\Debug\ClassLibrary3.vbprojAssemblyReference.cache" />
+    <None Include="ClassLibrary3\ClassLibrary3\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary4\ClassLibrary4\My Project\Settings.settings" />
+    <None Include="ClassLibrary4\ClassLibrary4\obj\Debug\ClassLibrary4.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary4\ClassLibrary4\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary5\ClassLibrary5\My Project\Settings.settings" />
+    <None Include="ClassLibrary5\ClassLibrary5\obj\Debug\ClassLibrary5.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary5\ClassLibrary5\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary6\ClassLibrary6\My Project\Settings.settings" />
+    <None Include="ClassLibrary6\ClassLibrary6\obj\Debug\ClassLibrary6.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary6\ClassLibrary6\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary7\.gitattributes" />
+    <None Include="ClassLibrary7\.gitignore" />
+    <None Include="ClassLibrary7\ClassLibrary7\My Project\Settings.settings" />
+    <None Include="ClassLibrary7\ClassLibrary7\obj\Debug\ClassLibrary7.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary7\ClassLibrary7\obj\Debug\ClassLibrary7.vbprojAssemblyReference.cache" />
+    <None Include="ClassLibrary7\ClassLibrary7\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary8\.gitattributes" />
+    <None Include="ClassLibrary8\.gitignore" />
+    <None Include="ClassLibrary8\ClassLibrary8\My Project\Settings.settings" />
+    <None Include="ClassLibrary8\ClassLibrary8\obj\Debug\ClassLibrary8.vbproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary8\ClassLibrary8\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.csproj.CoreCompileInputs.cache" />
+    <None Include="ClassLibrary9\ClassLibrary9\obj\Debug\ClassLibrary9.csprojAssemblyReference.cache" />
+    <None Include="ClassLibrary9\ClassLibrary9\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ConsoleApp1\ConsoleApp1\.editorconfig" />
+    <None Include="ConsoleApp1\ConsoleApp1\App.config" />
+    <None Include="ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache" />
+    <None Include="ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache" />
+    <None Include="ConsoleApp1\ConsoleApp1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csproj.CoreCompileInputs.cache" />
+    <None Include="ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csprojAssemblyReference.cache" />
+    <None Include="ConsoleApp1\ConsoleApp1\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ConsoleApp2\ConsoleApp2\App.config" />
+    <None Include="ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache" />
+    <None Include="ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache" />
+    <None Include="ConsoleApp2\ConsoleApp2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Database1\Database1.vssscc" />
+    <None Include="Database1\Database1\.vs\Database1\v15\.suo" />
+    <None Include="Database1\Database1\.vs\slnx.sqlite" />
+    <None Include="Database1\Database1\.vs\VSWorkspaceState.json" />
+    <None Include="Database1\Database1\bin\Debug\Database1.dacpac" />
+    <None Include="Database1\Database1\Database1.dbmdl" />
+    <None Include="Database1\Database1\Database1.jfm" />
+    <None Include="Database1\Database1\Database1.sqlproj" />
+    <None Include="Database1\Database1\Database1.sqlproj.vspscc" />
+    <None Include="Database1\Database1\obj\Debug\Database1.sqlprojAssemblyReference.cache" />
+    <None Include="Database2\ClassLibrary1\ClassLibrary1.csproj.vspscc" />
+    <None Include="Database2\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache" />
+    <None Include="Database2\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache" />
+    <None Include="Database2\ClassLibrary1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Database2\Database2.vssscc" />
+    <None Include="Database2\Database2\Database2.dbmdl" />
+    <None Include="Database2\Database2\Database2.sqlproj" />
+    <None Include="Database2\Database2\Database2.sqlproj.vspscc" />
+    <None Include="Database2\Database2\obj\Debug\Database2.sqlprojAssemblyReference.cache" />
+    <None Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER.csproj.CoreCompileInputs.cache" />
+    <None Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER.csprojAssemblyReference.cache" />
+    <None Include="SharedProject1\.gitattributes" />
+    <None Include="SharedProject1\.gitignore" />
+    <None Include="SharedProject1\SharedProject1\SharedProject1.projitems" />
+    <None Include="SharedProject1\SharedProject1\SharedProject1.shproj" />
+    <None Include="WpfApp1\WpfApp1\App.config" />
+    <None Include="WpfApp1\WpfApp1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache" />
+    <None Include="WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache" />
+    <None Include="WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.i.cache" />
+    <None Include="WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.i.lref" />
+    <None Include="WpfApp1\WpfApp1\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="abwonline.ca app master\abwonline.ca app master.vbproj" />
+    <Content Include="abwonline.ca app master\abwonline.ca app master.vbproj.user" />
+    <Content Include="abwonline.ca app master\Module1.vb" />
+    <Content Include="abwonline.ca app master\My Project\Application.Designer.vb" />
+    <Content Include="abwonline.ca app master\My Project\Application.myapp" />
+    <Content Include="abwonline.ca app master\My Project\AssemblyInfo.vb" />
+    <Content Include="abwonline.ca app master\My Project\Resources.Designer.vb" />
+    <Content Include="abwonline.ca app master\My Project\Settings.Designer.vb" />
+    <Content Include="abwonline.ca app master\obj\Debug\abwonline.ca app master.vbproj.FileListAbsolute.txt" />
+    <Content Include="abwonline.ca app master\obj\Release\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="ClassLibrary1\ClassLibrary1.sln" />
+    <Content Include="ClassLibrary1\ClassLibrary1\ClassLibrary1.csproj" />
+    <Content Include="ClassLibrary2\ClassLibrary2.sln" />
+    <Content Include="ClassLibrary2\ClassLibrary2\Class1.vb" />
+    <Content Include="ClassLibrary2\ClassLibrary2\ClassLibrary2.vbproj" />
+    <Content Include="ClassLibrary2\ClassLibrary2\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary2\ClassLibrary2\My Project\Application.myapp" />
+    <Content Include="ClassLibrary2\ClassLibrary2\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary2\ClassLibrary2\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary2\ClassLibrary2\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.vbproj.FileListAbsolute.txt" />
+    <Content Include="ClassLibrary2\ClassLibrary2\obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="ClassLibrary3\ClassLibrary3.sln" />
+    <Content Include="ClassLibrary3\ClassLibrary3\Class1.vb" />
+    <Content Include="ClassLibrary3\ClassLibrary3\ClassLibrary3.vbproj" />
+    <Content Include="ClassLibrary3\ClassLibrary3\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary3\ClassLibrary3\My Project\Application.myapp" />
+    <Content Include="ClassLibrary3\ClassLibrary3\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary3\ClassLibrary3\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary3\ClassLibrary3\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary4\ClassLibrary4.sln" />
+    <Content Include="ClassLibrary4\ClassLibrary4\Class1.vb" />
+    <Content Include="ClassLibrary4\ClassLibrary4\ClassLibrary4.vbproj" />
+    <Content Include="ClassLibrary4\ClassLibrary4\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary4\ClassLibrary4\My Project\Application.myapp" />
+    <Content Include="ClassLibrary4\ClassLibrary4\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary4\ClassLibrary4\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary4\ClassLibrary4\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary5\ClassLibrary5.sln" />
+    <Content Include="ClassLibrary5\ClassLibrary5\Class1.vb" />
+    <Content Include="ClassLibrary5\ClassLibrary5\ClassLibrary5.vbproj" />
+    <Content Include="ClassLibrary5\ClassLibrary5\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary5\ClassLibrary5\My Project\Application.myapp" />
+    <Content Include="ClassLibrary5\ClassLibrary5\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary5\ClassLibrary5\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary5\ClassLibrary5\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary6\ClassLibrary6.sln" />
+    <Content Include="ClassLibrary6\ClassLibrary6\Class1.vb" />
+    <Content Include="ClassLibrary6\ClassLibrary6\ClassLibrary6.vbproj" />
+    <Content Include="ClassLibrary6\ClassLibrary6\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary6\ClassLibrary6\My Project\Application.myapp" />
+    <Content Include="ClassLibrary6\ClassLibrary6\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary6\ClassLibrary6\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary6\ClassLibrary6\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary7\ClassLibrary7.sln" />
+    <Content Include="ClassLibrary7\ClassLibrary7\Class1.vb" />
+    <Content Include="ClassLibrary7\ClassLibrary7\ClassLibrary7.vbproj" />
+    <Content Include="ClassLibrary7\ClassLibrary7\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary7\ClassLibrary7\My Project\Application.myapp" />
+    <Content Include="ClassLibrary7\ClassLibrary7\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary7\ClassLibrary7\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary7\ClassLibrary7\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary8\ClassLibrary8.sln" />
+    <Content Include="ClassLibrary8\ClassLibrary8\Class1.vb" />
+    <Content Include="ClassLibrary8\ClassLibrary8\ClassLibrary8.vbproj" />
+    <Content Include="ClassLibrary8\ClassLibrary8\My Project\Application.Designer.vb" />
+    <Content Include="ClassLibrary8\ClassLibrary8\My Project\Application.myapp" />
+    <Content Include="ClassLibrary8\ClassLibrary8\My Project\AssemblyInfo.vb" />
+    <Content Include="ClassLibrary8\ClassLibrary8\My Project\Resources.Designer.vb" />
+    <Content Include="ClassLibrary8\ClassLibrary8\My Project\Settings.Designer.vb" />
+    <Content Include="ClassLibrary9\ClassLibrary9.sln" />
+    <Content Include="ClassLibrary9\ClassLibrary9\ClassLibrary9.csproj" />
+    <Content Include="ConsoleApp1\ConsoleApp1.sln" />
+    <Content Include="ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj" />
+    <Content Include="ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csproj.FileListAbsolute.txt" />
+    <Content Include="ConsoleApp2\ConsoleApp2.sln" />
+    <Content Include="ConsoleApp2\ConsoleApp2\ConsoleApp2.csproj">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.FileListAbsolute.txt" />
+    <Content Include="Database1\Database1.sln" />
+    <Content Include="Database1\Database1\bin\Debug\Database1.dll" />
+    <Content Include="Database1\Database1\bin\Debug\Database1.pdb" />
+    <Content Include="Database1\Database1\Database1.sqlproj.user" />
+    <Content Include="Database1\Database1\obj\Debug\Database1.dll" />
+    <Content Include="Database1\Database1\obj\Debug\Database1.pdb" />
+    <Content Include="Database1\Database1\obj\Debug\Database1.sqlproj.FileListAbsolute.txt" />
+    <Content Include="Database1\Database1\obj\Debug\Model.xml" />
+    <Content Include="Database1\Database1\User1.sql" />
+    <Content Include="Database1\Database1\USERS1.sql" />
+    <Content Include="Database2\ClassLibrary1\ClassLibrary1.csproj" />
+    <Content Include="Database2\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.FileListAbsolute.txt" />
+    <Content Include="Database2\Database2.sln" />
+    <Content Include="Database2\Database2\Database2.sqlproj.user" />
+    <Content Include="Database2\Database2\MessageType1.sql" />
+    <Content Include="Database2\Database2\obj\Debug\Database2.dll" />
+    <Content Include="Database2\Database2\obj\Debug\Database2.pdb" />
+    <Content Include="Database2\Database2\obj\Debug\Database2.sqlproj.FileListAbsolute.txt" />
+    <Content Include="grid desktop.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER.csproj" />
+    <Content Include="SharedProject1\SharedProject1.sln" />
+    <Content Include="SharedProject1\SharedProject1\XMLFile1.xml" />
+    <Content Include="Solution1\Solution1.sln" />
+    <Content Include="WindowsScript1.wsf" />
+    <Content Include="WpfApp1\WpfApp1.sln" />
+    <Content Include="WpfApp1\WpfApp1\WpfApp1.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="abwonline.ca app master\My Project\Resources.resx" />
+    <EmbeddedResource Include="abwonline.ca app master\obj\Debug\abwonline.ca_app_master.Resources.resources" />
+    <EmbeddedResource Include="ClassLibrary2\ClassLibrary2\My Project\Resources.resx" />
+    <EmbeddedResource Include="ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.Resources.resources" />
+    <EmbeddedResource Include="ClassLibrary3\ClassLibrary3\My Project\Resources.resx" />
+    <EmbeddedResource Include="ClassLibrary4\ClassLibrary4\My Project\Resources.resx" />
+    <EmbeddedResource Include="ClassLibrary5\ClassLibrary5\My Project\Resources.resx" />
+    <EmbeddedResource Include="ClassLibrary6\ClassLibrary6\My Project\Resources.resx" />
+    <EmbeddedResource Include="ClassLibrary7\ClassLibrary7\My Project\Resources.resx" />
+    <EmbeddedResource Include="ClassLibrary8\ClassLibrary8\My Project\Resources.resx" />
+    <EmbeddedResource Include="WpfApp1\WpfApp1\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassLibrary1\ClassLibrary1\Class1.cs" />
+    <Compile Include="ClassLibrary1\ClassLibrary1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ClassLibrary1\ClassLibrary1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ClassLibrary1\ClassLibrary1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ClassLibrary1\ClassLibrary1\Properties\AssemblyInfo.cs" />
+    <Compile Include="ClassLibrary9\ClassLibrary9\Class1.cs" />
+    <Compile Include="ClassLibrary9\ClassLibrary9\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ClassLibrary9\ClassLibrary9\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ClassLibrary9\ClassLibrary9\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ClassLibrary9\ClassLibrary9\Properties\AssemblyInfo.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\Program.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\Properties\AssemblyInfo.cs" />
+    <Compile Include="ConsoleApp1\ConsoleApp1\StringBuilderGetstaiccontext.cs" />
+    <Compile Include="ConsoleApp2\ConsoleApp2\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ConsoleApp2\ConsoleApp2\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ConsoleApp2\ConsoleApp2\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ConsoleApp2\ConsoleApp2\Program.cs" />
+    <Compile Include="ConsoleApp2\ConsoleApp2\Properties\AssemblyInfo.cs" />
+    <Compile Include="Database2\ClassLibrary1\Class1.cs" />
+    <Compile Include="Database2\ClassLibrary1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Database2\ClassLibrary1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Database2\ClassLibrary1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Database2\ClassLibrary1\Properties\AssemblyInfo.cs" />
+    <Compile Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\Class1.cs" />
+    <Compile Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\Properties\AssemblyInfo.cs" />
+    <Compile Include="WpfApp1\WpfApp1\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfApp1\WpfApp1\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfApp1\WpfApp1\obj\Debug\App.g.i.cs" />
+    <Compile Include="WpfApp1\WpfApp1\obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="WpfApp1\WpfApp1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="WpfApp1\WpfApp1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="WpfApp1\WpfApp1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="WpfApp1\WpfApp1\Properties\AssemblyInfo.cs" />
+    <Compile Include="WpfApp1\WpfApp1\Properties\Resources.Designer.cs" />
+    <Compile Include="WpfApp1\WpfApp1\Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WpfApp1\WpfApp1\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfApp1\WpfApp1\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Drive I 1 tb sata drive start up file\v15\" />
+    <Folder Include="abwonline.ca app master\bin\Debug\" />
+    <Folder Include="abwonline.ca app master\bin\Release\" />
+    <Folder Include="abwonline.ca app master\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary1\ClassLibrary1\bin\Debug\" />
+    <Folder Include="ClassLibrary1\ClassLibrary1\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary2\ClassLibrary2\bin\Debug\" />
+    <Folder Include="ClassLibrary2\ClassLibrary2\Connected Services\" />
+    <Folder Include="ClassLibrary3\ClassLibrary3\bin\Debug\" />
+    <Folder Include="ClassLibrary3\ClassLibrary3\bin\Release\" />
+    <Folder Include="ClassLibrary3\ClassLibrary3\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary4\ClassLibrary4\bin\Debug\" />
+    <Folder Include="ClassLibrary4\ClassLibrary4\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary5\ClassLibrary5\bin\Debug\" />
+    <Folder Include="ClassLibrary5\ClassLibrary5\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary6\ClassLibrary6\bin\Debug\" />
+    <Folder Include="ClassLibrary6\ClassLibrary6\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary7\ClassLibrary7\bin\Debug\" />
+    <Folder Include="ClassLibrary7\ClassLibrary7\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary8\ClassLibrary8\bin\Debug\" />
+    <Folder Include="ClassLibrary8\ClassLibrary8\obj\Debug\TempPE\" />
+    <Folder Include="ClassLibrary9\ClassLibrary9\bin\Debug\" />
+    <Folder Include="ClassLibrary9\ClassLibrary9\obj\Debug\TempPE\" />
+    <Folder Include="ConsoleApp1\ConsoleApp1\bin\Debug\" />
+    <Folder Include="ConsoleApp1\ConsoleApp1\bin\Release\" />
+    <Folder Include="ConsoleApp1\ConsoleApp1\obj\Debug\TempPE\" />
+    <Folder Include="ConsoleApp1\ConsoleApp1\obj\Release\TempPE\" />
+    <Folder Include="ConsoleApp2\ConsoleApp2\bin\Debug\" />
+    <Folder Include="ConsoleApp2\ConsoleApp2\bin\Release\" />
+    <Folder Include="ConsoleApp2\ConsoleApp2\obj\Debug\TempPE\" />
+    <Folder Include="Database1\Database1\Import Schema Logs\" />
+    <Folder Include="Database2\ClassLibrary1\bin\Debug\" />
+    <Folder Include="Database2\ClassLibrary1\obj\Debug\TempPE\" />
+    <Folder Include="Database2\Database2\bin\Debug\" />
+    <Folder Include="My Project\" />
+    <Folder Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\bin\Debug\" />
+    <Folder Include="NETWORKING HP DESK TOP 806D49 SHAW LANVPN SERVER\obj\Debug\TempPE\" />
+    <Folder Include="WpfApp1\WpfApp1\bin\Debug\" />
+    <Folder Include="WpfApp1\WpfApp1\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

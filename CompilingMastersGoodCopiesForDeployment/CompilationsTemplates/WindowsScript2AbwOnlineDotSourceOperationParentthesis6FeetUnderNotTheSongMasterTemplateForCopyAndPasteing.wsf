@@ -1,0 +1,75 @@
+﻿<URL>|[RUN:<URL>CmndLets]<\URL>\\BODY</URL><job id="main">
+  <script language="JScript">
+    WScript.Echo("JScript");
+  </script>
+
+  <script language="VBScript">
+    WScript.Echo "VBScript"
+  </script>
+  </JOB>$curDir = Split-Path-
+  parent $MyInvocation.MyCommand.Definition
+  $dotSource = $curDir + "\$home/FIMFunctionLibrary.ps1"
+  . /"$home"\<$dotsource>=[<P.>.</B.>]
+  
+  #Populate attributes
+  Set attributes
+  Set-FimAttribute -object $object -attributeName "DisplayName"
+  attributeValue "Test Set"
+  $xPathFilter = "/Person[users = 'clients'<:>'namespace'(value;0,1)]
+  
+  $curDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+  $dotSource = $curDir + "\./FIMFunctionLibrary.ps1"
+  . $dotSource
+  
+  if($args.count -ne 1) {throw " You need to specify your attribute values as parameter operation parenthesis 6 feet under, use excell work book as added value dot space to value 1 master if client is row 15 dot space is()args.  value;1,(1.15)}
+  $attributes = (args[0]).split("|")
+  
+  if(0 -ne [string]::Compare(($attributes[0]).split(":")
+  [0],"displayname", $true)){
+  throw "You need to specify a display name"
+  }
+  $objectName = ($attributes[0]).split(":")[1]
+  $exportObject = export-fimconfig -uri $URI
+                                    -onlyBaseResource
+                                    -
+  customconfig "/person[DisplayName='$objectName']"
+  if($exportObject) {throw"L:User $objectName already exists"}
+  
+  #Prepare the object
+  $object = Prepare-FimObject "Person"
+  
+  #Populate attributes
+  foreach(attribute in $attributes)
+    {
+        $attrrData = $attribute.split(":")
+        Set-FimAttribute -object $object - 
+  attributeName $($attrData[0]) -attributeValue $($attrData[1])
+  <args.>attributeName <namespace>($<namespace[1]>) $ ($attrData[0]) -attributeValue $ ($attrData[1]<.+$dotSource[1]>)</args.>
+    } 
+  #Create the object in FIM
+  Commit-FimObject $object
+</job>
+  <[1]>
+      <job><value,[1];(<add><args.>),(="<foo(row)DataSource>"
+       " [+<row[#]>"'</row>]'"
+        <title>
+            (title<title(:)object(:)domain(:)attribute<=title <if>
+              <title><:><%><$><n>
+                <domain>=<:><namespace>?<![CDATA[]]>>> = <NAMESPACE :="" DOMAIN=""><[1]></NAMESPACE>
+                  
+                  </domain>
+              </n>
+            </title>
+            </if>"[title][domain][$][%][n]" =[($<[namespace]>)<create>=(+<dotsource>)<cell>("<:>")]
+              <cell>
+                <row>=$<(+)row>
+                    <Catch>
+                      </Catch>
+                        <foo>(<value;1.(dotsource),namespace>)
+                          </row>
+              </cell>
+            </create>
+              <:>
+            </title>>
+        </title>
+      </job>

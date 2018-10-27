@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+XML:
+*////////////////////////////////////////////////////////*
+*/						PARAMETERS						                    /*
+*////////////////////////////////////////////////////////*
+Content-type: application/xml; charset=utf-8;
+<CSRRequest>
+  <AuthRequest>
+    <PartnerCode>String content</PartnerCode>
+    <AuthToken>String content</AuthToken>
+    <ReplayToken>String content</ReplayToken>
+    <UserAgent>String content</UserAgent>
+    <IPAddress>String content</IPAddress>
+  </AuthRequest>
+  <ProductCode>String content</ProductCode>
+  <CSR>String content</CSR>
+</CSRRequest>
+
+*////////////////////////////////////////////////////////*
+*/						        RESPONSE			                    /*
+*////////////////////////////////////////////////////////*
+XML:
+<CSRResponse>
+  <AuthResponse>
+    <isError>true</isError>
+    <Message>
+      <string>String content</string>
+      <string>String content</string>
+    </Message>
+    <Timestamp>String content</Timestamp>
+    <ReplayToken>String content</ReplayToken>
+    <InvokingPartnerCode>String content</InvokingPartnerCode>
+  </AuthResponse>
+  <DNSNames>
+    <string>String content</string>
+    <string>String content</string>
+  </DNSNames>
+  <Country>String content</Country>
+  <Email>String content</Email>
+  <Locality>String content</Locality>
+  <Organization>String content</Organization>
+  <OrganizationUnit>String content</OrganizationUnit>
+  <State>String content</State>
+  <hasBadExtensions>true</hasBadExtensions>
+  <isValidDomainName>true</isValidDomainName>
+  <isWildcardCSR>true</isWildcardCSR>
+  <MD5Hash>String content</MD5Hash>
+  <SHA1Hash>String content</SHA1Hash>
+  <DomainName>String content</DomainName>
+  <RegionSpecificOrderIndicator>String content</RegionSpecificOrderIndicator>
+</CSRResponse>
+

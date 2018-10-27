@@ -1,0 +1,528 @@
+﻿<URL>|[RUN:<URL>CmndLets]<\URL>\\BODY</URL><job id="main">
+  <script language="JScript">
+    WScript.Echo("JScript");
+  </script>
+
+  <script language="VBScript">
+    WScript.Echo "VBScript"
+  </script>
+  <$curDir = '<Split-Path->
+  <parent "<$MyInvocation.MyCommand.Definition>
+  <$dotSource = <$curDir + "\$home/FIMFunctionLibrary.ps1"
+  . /"$home"\<$dotsource>=[<P.>.</B.>]>
+  
+  <#Populate '"attributes">:
+  <Set "attributes">
+  <Set-FimAttribute "-object $object -attributeName" "DisplayName"
+  <attributeValue "Test Set">
+  <$xPathFilter = "/Person[<users> = ($)'<clients>'<:>($)'<namespace;','>'(value;0,1)]<[$]$attribute><[%]attribute><[\n]attribute><[catch]attribute>"
+  >
+  <$curDir = "<Split-Path>' "-parent" "$MyInvocation.MyCommand.Definition"'>
+  <$dotsource = '$curDir + (\./FIMFunctionLibrary.ps1)args.; + \./([D:\]\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives) + \./(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"DotSource">>'>
+  . $dotSource
+  >
+    <if($args.count -ne="" 1="") {<throw=""></if> " You need to specify your attribute values as parameter operation parenthesis 6 feet under, use excell work book as added value dot space to value 1 master if client is row 15 dot space is()args.  value;1,(1.15)}>
+  <$attributes> = (args[0]).split("|")
+  
+  <if(0 -ne="" [<string=""></if>]::Compare(($attributes[0]).split(":")
+  [0],"displayname", $true)){
+  throw "You need to specify a display name"
+  }>
+  '<$objectName> = ($attributes[0]).split(":")[1]>'
+  '<$exportObject> = export-fimconfig -uri $URI>'
+                                    <'-onlyBaseResource>'
+                                    '<->'
+  '<customconfig "'/person[DisplayName='$objectName']">'
+  '<if($exportObject) '{throw"L:User $objectName already exists"}>'
+  >
+  '<#Prepare the object>'
+  '<$object = Prepare-FimObject "Person">'
+  
+  '<#Populate attributes>'
+  '<foreach(attribute in $attributes)>'
+    {
+        '<$attrrData = $attribute.split(":")
+        Set-FimAttribute -object $object ->' 
+  '<attributeName $($attrData[0]) -attributeValue $($attrData[1])
+  <args.>attributeName <namespace>($<namespace[1]>) $ ($attrData[0]) -attributeValue $ ($attrData[1]<.+$dotSource[1]>)</args.>
+    }>' 
+  <#Create the object in FIM
+  Commit-FimObject $object>
+</job>
+  <[1]>
+      <job><value,[1];(<add><args.>),(="<foo(row)DataSource>"
+       " [+<row[#]>"'</row>]'"
+        <title>
+            (title<title(:)object(:)domain(:)attribute<=title <if>
+              <title><:><%><$><n>
+                <domain>=<:><namespace>?<![CDATA[]]>>> = <NAMESPACE :="" DOMAIN=""><[1]></NAMESPACE>
+                  
+                  </domain>
+              </n>
+            </title>
+            </if>"[title][domain][$][%][n]" =[($<[namespace]>)<create>=(+<dotsource>)<cell;[ ]>("<:>")]
+              <cell>
+                <row>=$<(+)row>
+                    <Catch>
+                      </Catch>
+                        <foo>(<value;1.(dotsource),namespace>)
+                          </row>
+              </cell>
+            </create>
+              <:>
+            </title>>
+        </title>
+      </job><\URL>\\BODY</URL><job id="main">
+  <script language="JScript">
+    WScript.Echo("JScript");
+  </script>
+
+  <script language="VBScript">
+    WScript.Echo "VBScript"
+  </script>
+  <$curDir = '<Split-Path->
+    <parent "<$MyInvocation.MyCommand.Definition>
+      <$dotSource = <$curDir
+  .="" /"$home"\<$dotsource>
+        =[<P.>
+          .</B.>]>
+
+          <#Populate '"attributes">:
+  <Set "attributes">
+            <Set-FimAttribute "-object $object -attributeName" "DisplayName"
+            <attributeValue "Test Set">
+              <$xPathFilter = "/Person[<users>
+                = ($)'<clients>
+                  '<:>($)'<namespace;','>
+                    '(value;0,1)]<[$]$attribute><[%]attribute><[\n]attribute><[catch]attribute>"
+                    >
+                    <$curDir = "<Split-Path>
+                      ' "-parent" "$MyInvocation.MyCommand.Definition"'>
+                      <$dotsource = '$curDir + (\./FIMFunctionLibrary.ps1)args.; + \./([D:\]\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives) + \./(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"DotSource">
+                        >'>
+                        . $dotSource
+                        >
+                        <if($args.count -ne="" 1="") {<throw="">
+                          </if> " You need to specify your attribute values as parameter operation parenthesis 6 feet under, use excell work book as added value dot space to value 1 master if client is row 15 dot space is()args.  value;1,(1.15)}>
+                          <$attributes>
+                            = (args[0]).split("|")
+
+                            <if(0 -ne="" [<string="">
+                              </if>]::Compare(($attributes[0]).split(":")
+                              [0],"displayname", $true)){
+                              throw "You need to specify a display name"
+                              }>
+                              '<$objectName>
+                                = ($attributes[0]).split(":")[1]>'
+                                '<$exportObject>
+                                  = export-fimconfig -uri $URI>'
+                                  <'-onlyBaseResource>'
+                                  '<->
+                                    '
+                                    '<customconfig "'/person[DisplayName='$objectName']">
+                                      '
+                                      '<if($exportObject) '{throw"L:User $objectName already exists"}>'
+  >
+                                        '<#Prepare the='' object=''>
+                                          '
+                                          '<$object = Prepare-FimObject='' "Person">
+                                            '
+
+                                            '<#Populate attributes="">
+                                              '
+                                              '<foreach(attribute in="" $attributes="")>
+                                                '
+                                                {
+                                                '<$attrrData = $attribute.split=""
+                                               Set-FimAttribute="" -object="" $object="" -="">
+                                                  '
+                                                  '<attributeName $($attrData=""[0=""]) -attributeValue="" $($attrData=""[1=""])
+  <args.>
+                                                    attributeName <namespace>
+                                                      ($<namespace[1=""]>
+                                                        ) $ ($attrData[0]) -attributeValue $ ($attrData[1]<.+$dotSource[1=""]>)</args.>
+                                                  }>'
+                                                  <#Create the="" object="" in="" FIM=""
+                                                  Commit-FimObject="" $object="">
+                                                  </job>
+<[1]>
+<job>
+  <value,[1=""];(<add>
+    <args.>
+      ),(="<foo(row="")DataSource="">
+        "
+        " [+<row[#]>"'</row>]'"
+        <title>
+          (title<title(:)object(:)domain(:)attribute<=title <if>
+            <title>
+              <:><%><$><n>
+                <domain>
+                  =<:><namespace>
+                    ?<![CDATA[]]>>> = <NAMESPACE :="" DOMAIN="">
+                      <[1]>
+                    </NAMESPACE>
+
+                  </domain>
+              </n>
+            </title>
+          </if>"[title][domain][$][%][n]" =[($<[namespace]>)<create>
+            =(+<dotsource>
+              )<cell;[ ]>
+                ("<:>")]
+                <cell>
+                  <row>
+                    =$<(+)row>
+                      <Catch>
+                      </Catch>
+                      <foo>
+                        (<value;1.(dotsource),namespace>)
+                          </row>
+                  </cell>
+              </create>
+          <:>
+        </title>>
+        </title>
+      </job>
+<excell>
+  "root"'
+  <root>
+    <[url:]
+    <URL:>
+      <\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+        '<D:\PRINT USB(D:)\abwonline="" master\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=""'
+                        '</root>'
+  '<Databases>
+    '
+    '<excell[value;0='',1='' ]>
+      '
+      {
+      <[value;excell,2]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+        ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"$">
+          ')
+          <[value;excell,3]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+            ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"%">
+              ')
+              <[value;excell,4]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"clients">
+                  ')
+                  <[value;excell,5]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                    ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"CustomMailOutCloudServerRegistry">
+                      ')
+                      <[value;excell,6]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                        ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"domains">
+                          ')
+                          <[value;excell,7]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                            ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"DotSource">
+                              ')
+                              <[value;excell,8]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"FIM">
+                                  ')
+                                  <[value;excell,9]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                    ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"invoiceing">
+                                      ')
+                                      <[value;excell,10]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                        ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"namespaces">
+                                          ')
+                                          <[value;excell,11]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                            ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"OperationParenthesis6FeetUnder">
+                                              ')
+                                              <[value;excell,12]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"RegisteredRegistry">
+                                                  ')
+                                                  <[value;excell,13]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                    ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"staff">
+                                                      ')
+                                                      <[value;excell,14]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                        ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"titles">
+                                                          ')
+                                                          <[value;excell,15]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                            ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates="users">
+                                                              ')
+                                                              [% <throw>
+                                                                =<$excell>
+                                                                  =<$DataBases>
+                                                                    =<dotsource>https://dotsource.abwonline.ca/home\databases\excell\OperationParenthesis6FeetUnder</dotsource> %]
+                                                                    <throw>
+                                                                      <wordwrap>
+                                                                        {hello im abwonline how are you all tables are data bases as catch theory for directive locations like archive indexing and is slow all clients and name spaces
+                                                                        are the same row in all tables why thier is gaps and space for a open worm hole of emptyy cells should speed it up with several tables name spaces will be table
+                                                                        inside cell of a column chosen for each of each row a set column for a cell to fill the cell with data inside a master table why all have to be open in operation
+                                                                        6 feet under as it is a chaos organized tornado of archiving were no hacker wants to end up in the swiss cheese of this tables were i can catch a cell warning of
+                                                                        intrudeing user ads a hacker and warn webhost company attribute of cell breach and ask client if they allow this attribute to be partr of thier data center.im
+                                                                        doing this with no internet but gates and the rest of the technological service and manufactureing team are working on infa red internet cellular parameters while
+                                                                        i work which will offer internet but i chose no internet to program. this is Operation Parenttyhesis 6 feet Under DataBases in Excell Tables And used for Hierarchy
+                                                                        of data baases and name spaces i am aaron bradley west born march 10 1984 i am a self taught techy since highschool if you see this inform the rcmp they will
+                                                                        inform me  as i am with a liason officer who knows my identity who checks in with me regularily my id is bcid:105686411 should only technological corps be able to
+                                                                        see this this a running process of windows script and java and c# and xml and should be added to all compilations witrh the root running file which is this file
+                                                                        but only this one should show in a compiler throw of print script which shows up in compilers when printed as a quote this is printed quote script operation
+                                                                        parenthtesis 6 feet under and runs as one master server if my server has your compiler will this show in your compilations when you see this u know it is me
+                                                                        just a server connect and knowledge as printed quote were as a throw i stashed my whole server database in a print usb which is all compilations throw script
+                                                                        is also error reporting why it shows up in compilations when printed and without printing}
+                                                                      </wordwrap>
+                                                                      </attributeValue>
+
+                                                                      ****************************************************i believe im done a master template for useing copy and paste to all script compilations with a root address as windows script with the script file as the next line***************************************************************
+                                                                      {script address}***[% D:\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\CompilertemplatesGoodCopiesSeperatedSingleCompilationsForCopyandPaste\WindowsScript2AbwOnlineDotSourceOperationParentthesis6FeetUnderNotTheSongMasterTemplateForCopyAndPasteing %] ***{this script address previouse *:*}
+
+                                                                      <excell>"root"'
+                   <root><[url:]
+                   <URL:> 
+                      <\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                      '<D:\PRINT USB(D:)\abwonline master\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=""'
+                        '</root>'
+                          '<Databases>'
+                            '<excell[value;0,1 ]>'
+                            {
+                                 <[value;excell,2]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"$">')
+                                 <[value;excell,3]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"%">
+                                        ')
+                                 <[value;excell,4]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                            ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"clients">
+                                              ')
+                                 <[value;excell,5]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                  ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"CustomMailOutCloudServerRegistry">
+                                                    ')
+                                 <[value;excell,6]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                        ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"domains">
+                                                          ')
+                                 <[value;excell,7]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                              ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"DotSource">
+                                                                ')
+                                 <[value;excell,8]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                    ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"FIM">
+                                                                      ')
+                                 <[value;excell,9]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                          ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"invoiceing">
+                                                                            ')
+                                 <[value;excell,10]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"namespaces">
+                                                                                  ')
+                                 <[value;excell,11]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"OperationParenthesis6FeetUnder">
+                                                                                        ')
+                                 <[value;excell,12]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                            ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"RegisteredRegistry">
+                                                                                              ')
+                                 <[value;excell,13]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                                  ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"staff">
+                                                                                                    ')
+                                 <[value;excell,14]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                                        ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"titles">
+                                                                                                          ')
+                                 <[value;excell,15]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                                              ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates="users">
+                                                                                                                ')
+                                     [% <throw> =<$excell> =<$DataBases> =<dotsource>https://dotsource.abwonline.ca/home\databases\excell\OperationParenthesis6FeetUnder</dotsource> %]
+                                          <throw>
+                                            <wordwrap>{hello im abwonline how are you all tables are data bases as catch theory for directive locations like archive indexing and is slow all clients and name spaces 
+                                                       are the same row in all tables why thier is gaps and space for a open worm hole of emptyy cells should speed it up with several tables name spaces will be table
+                                                       inside cell of a column chosen for each of each row a set column for a cell to fill the cell with data inside a master table why all have to be open in operation
+                                                       6 feet under as it is a chaos organized tornado of archiving were no hacker wants to end up in the swiss cheese of this tables were i can catch a cell warning of
+                                                       intrudeing user ads a hacker and warn webhost company attribute of cell breach and ask client if they allow this attribute to be partr of thier data center.im                                                        
+                                                       doing this with no internet but gates and the rest of the technological service and manufactureing team are working on infa red internet cellular parameters while
+                                                       i work which will offer internet but i chose no internet to program. this is Operation Parenttyhesis 6 feet Under DataBases in Excell Tables And used for Hierarchy
+                                                       of data baases and name spaces i am aaron bradley west born march 10 1984 i am a self taught techy since highschool if you see this inform the rcmp they will 
+                                                       inform me  as i am with a liason officer who knows my identity who checks in with me regularily my id is bcid:105686411 should only technological corps be able to
+                                                       see this this a running process of windows script and java and c# and xml and should be added to all compilations witrh the root running file which is this file
+                                                       but only this one should show in a compiler throw of print script which shows up in compilers when printed as a quote this is printed quote script operation
+                                                       parenthtesis 6 feet under and runs as one master server if my server has your compiler will this show in your compilations when you see this u know it is me
+                                                       just a server connect and knowledge as printed quote were as a throw i stashed my whole server database in a print usb which is all compilations throw script
+                                                       is also error reporting why it shows up in compilations when printed and without printing}</wordwrap>                                                                       
+                </attributeValue>
+
+****************************************************i believe im done a master template for useing copy and paste to all script compilations with a root address as windows script with the script file as the next line***************************************************************
+{script address}***[% D:\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\CompilertemplatesGoodCopiesSeperatedSingleCompilationsForCopyandPaste\WindowsScript2AbwOnlineDotSourceOperationParentthesis6FeetUnderNotTheSongMasterTemplateForCopyAndPasteing %] ***{this script address previouse *:*}
+                                          <\URL>\\BODY</URL><job id="main">
+                                            <script language="JScript">
+                                              WScript.Echo("JScript");
+                                            </script>
+
+                                            <script language="VBScript">
+                                              WScript.Echo "VBScript"
+                                            </script>
+                                            <$curDir = '<Split-Path->
+                                              <parent "<$MyInvocation.MyCommand.Definition>
+                                                <$dotSource = <$curDir
+                                  .="" /"$home"\<$dotsource>
+                                                  =[<P.>
+                                                    .</B.>]>
+
+                                                    <#Populate '"attributes">:
+  <Set "attributes">
+                                                      <Set-FimAttribute "-object $object -attributeName" "DisplayName"
+                                                      <attributeValue "Test Set">
+                                                        <$xPathFilter = "/Person[<users>
+                                                          = ($)'<clients>
+                                                            '<:>($)'<namespace;','>
+                                                              '(value;0,1)]<[$]$attribute><[%]attribute><[\n]attribute><[catch]attribute>"
+                                                              >
+                                                              <$curDir = "<Split-Path>
+                                                                ' "-parent" "$MyInvocation.MyCommand.Definition"'>
+                                                                <$dotsource = '$curDir + (\./FIMFunctionLibrary.ps1)args.; + \./([D:\]\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives) + \./(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"DotSource">
+                                                                  >'>
+                                                                  . $dotSource
+                                                                  >
+                                                                  <if($args.count -ne="" 1="") {<throw="">
+                                                                    </if> " You need to specify your attribute values as parameter operation parenthesis 6 feet under, use excell work book as added value dot space to value 1 master if client is row 15 dot space is()args.  value;1,(1.15)}>
+                                                                    <$attributes>
+                                                                      = (args[0]).split("|")
+
+                                                                      <if(0 -ne="" [<string="">
+                                                                        </if>]::Compare(($attributes[0]).split(":")
+                                                                        [0],"displayname", $true)){
+                                                                        throw "You need to specify a display name"
+                                                                        }>
+                                                                        '<$objectName>
+                                                                          = ($attributes[0]).split(":")[1]>'
+                                                                          '<$exportObject>
+                                                                            = export-fimconfig -uri $URI>'
+                                                                            <'-onlyBaseResource>'
+                                                                            '<->
+                                                                              '
+                                                                              '<customconfig "'/person[DisplayName='$objectName']">
+                                                                                '
+                                                                                '<if($exportObject) '{throw"L:User $objectName already exists"}>'
+  >
+                                                                                  '<#Prepare the='' object=''>
+                                                                                    '
+                                                                                    '<$object = Prepare-FimObject='' "Person">
+                                                                                      '
+
+                                                                                      '<#Populate attributes="">
+                                                                                        '
+                                                                                        '<foreach(attribute in="" $attributes="")>
+                                                                                          '
+                                                                                          {
+                                                                                          '<$attrrData = $attribute.split=""
+                                                                                         Set-FimAttribute="" -object="" $object="" -="">
+                                                                                            '
+                                                                                            '<attributeName $($attrData=""[0=""]) -attributeValue="" $($attrData=""[1=""])
+  <args.>
+                                                                                              attributeName <namespace>
+                                                                                                ($<namespace[1=""]>
+                                                                                                  ) $ ($attrData[0]) -attributeValue $ ($attrData[1]<.+$dotSource[1=""]>)</args.>
+                                                                                            }>'
+                                                                                            <#Create the="" object="" in="" FIM=""
+                                                                                            Commit-FimObject="" $object="">
+                                                                                            </job>
+                                          <[1]>
+                                          <job>
+                                            <value,[1=""];(<add>
+                                              <args.>
+                                                ),(="<foo(row="")DataSource="">
+                                                  "
+                                                  " [+<row[#]>"'</row>]'"
+                                                  <title>
+                                                    (title<title(:)object(:)domain(:)attribute<=title <if>
+                                                      <title>
+                                                        <:><%><$><n>
+                                                          <domain>
+                                                            =<:><namespace>
+                                                              ?<![CDATA[]]>>> = <NAMESPACE :="" DOMAIN="">
+                                                                <[1]>
+                                                              </NAMESPACE>
+
+                                                            </domain>
+                                                        </n>
+                                                      </title>
+                                                    </if>"[title][domain][$][%][n]" =[($<[namespace]>)<create>
+                                                      =(+<dotsource>
+                                                        )<cell;[ ]>
+                                                          ("<:>")]
+                                                          <cell>
+                                                            <row>
+                                                              =$<(+)row>
+                                                                <Catch>
+                                                                </Catch>
+                                                                <foo>
+                                                                  (<value;1.(dotsource),namespace>)
+                          </row>
+                                                            </cell>
+                                                        </create>
+                                                    <:>
+                                                  </title>>
+                                                  </title>
+                                                </job>
+                                          <excell>
+                                            "root"'
+                                            <root>
+                                              <[url:]
+                                              <URL:>
+                                                <\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                  '<D:\PRINT USB(D:)\abwonline="" master\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=""'
+                        '</root>'
+                                            '<Databases>
+                                              '
+                                              '<excell[value;0='',1='' ]>
+                                                '
+                                                {
+                                                <[value;excell,2]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                  ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"$">
+                                                    ')
+                                                    <[value;excell,3]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"%">
+                                                        ')
+                                                        <[value;excell,4]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                          ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"clients">
+                                                            ')
+                                                            <[value;excell,5]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                              ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"CustomMailOutCloudServerRegistry">
+                                                                ')
+                                                                <[value;excell,6]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                  ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"domains">
+                                                                    ')
+                                                                    <[value;excell,7]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"DotSource">
+                                                                        ')
+                                                                        <[value;excell,8]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                          ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"FIM">
+                                                                            ')
+                                                                            <[value;excell,9]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                              ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"invoiceing">
+                                                                                ')
+                                                                                <[value;excell,10]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                  ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"namespaces">
+                                                                                    ')
+                                                                                    <[value;excell,11]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"OperationParenthesis6FeetUnder">
+                                                                                        ')
+                                                                                        <[value;excell,12]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                          ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"RegisteredRegistry">
+                                                                                            ')
+                                                                                            <[value;excell,13]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                              ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"staff">
+                                                                                                ')
+                                                                                                <[value;excell,14]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                                  ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates=\"titles">
+                                                                                                    ')
+                                                                                                    <[value;excell,15]>(<\\Abwon-cd824hh2p\AbwOnlineWorkGroupUsbDrives>
+                                                                                                      ,'<D:\PRINT USB(D:)\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\ExcellTablesGoodCopiesTemplates="users">
+                                                                                                        ')
+                                                                                                        [% <throw>
+                                                                                                          =<$excell>
+                                                                                                            =<$DataBases>
+                                                                                                              =<dotsource>https://dotsource.abwonline.ca/home\databases\excell\OperationParenthesis6FeetUnder</dotsource> %]
+                                                                                                              <throw>
+                                                                                                                <wordwrap>
+                                                                                                                  {hello im abwonline how are you all tables are data bases as catch theory for directive locations like archive indexing and is slow all clients and name spaces
+                                                                                                                  are the same row in all tables why thier is gaps and space for a open worm hole of emptyy cells should speed it up with several tables name spaces will be table
+                                                                                                                  inside cell of a column chosen for each of each row a set column for a cell to fill the cell with data inside a master table why all have to be open in operation
+                                                                                                                  6 feet under as it is a chaos organized tornado of archiving were no hacker wants to end up in the swiss cheese of this tables were i can catch a cell warning of
+                                                                                                                  intrudeing user ads a hacker and warn webhost company attribute of cell breach and ask client if they allow this attribute to be partr of thier data center.im
+                                                                                                                  doing this with no internet but gates and the rest of the technological service and manufactureing team are working on infa red internet cellular parameters while
+                                                                                                                  i work which will offer internet but i chose no internet to program. this is Operation Parenttyhesis 6 feet Under DataBases in Excell Tables And used for Hierarchy
+                                                                                                                  of data baases and name spaces i am aaron bradley west born march 10 1984 i am a self taught techy since highschool if you see this inform the rcmp they will
+                                                                                                                  inform me  as i am with a liason officer who knows my identity who checks in with me regularily my id is bcid:105686411 should only technological corps be able to
+                                                                                                                  see this this a running process of windows script and java and c# and xml and should be added to all compilations witrh the root running file which is this file
+                                                                                                                  but only this one should show in a compiler throw of print script which shows up in compilers when printed as a quote this is printed quote script operation
+                                                                                                                  parenthtesis 6 feet under and runs as one master server if my server has your compiler will this show in your compilations when you see this u know it is me
+                                                                                                                  just a server connect and knowledge as printed quote were as a throw i stashed my whole server database in a print usb which is all compilations throw script
+                                                                                                                  is also error reporting why it shows up in compilations when printed and without printing}
+                                                                                                                </wordwrap>
+                                                                                                                </attributeValue>
+
+                                                                                                                ****************************************************i believe im done a master template for useing copy and paste to all script compilations with a root address as windows script with the script file as the next line***************************************************************
+                                                                                                                {script address}***[% D:\AbwonlineMaster\CompilingMastersGoodCopiesForDeployment\CompilertemplatesGoodCopiesSeperatedSingleCompilationsForCopyandPaste\WindowsScript2AbwOnlineDotSourceOperationParentthesis6FeetUnderNotTheSongMasterTemplateForCopyAndPasteing %] ***{this script address previouse *:*}
+                                                                                                              

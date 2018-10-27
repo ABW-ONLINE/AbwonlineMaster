@@ -1,0 +1,127 @@
+﻿<job id="main">
+	<script language="JScript">
+		WScript.Echo("JScript");
+	</script>
+  // JavaScript source code
+  <JSON:>
+  *////////////////////////////////////////////////////////*
+  */						PARAMETERS						/*
+  *////////////////////////////////////////////////////////*
+  <Content-type: application/<json; charset=utf-8></json>;
+  {
+  "<AuthRequest></AuthRequest>":{
+  "<PartnerCode":"String content">,
+  "<AuthToken":"String content">,
+  "<ReplayToken":"String content></ReplayToken>",
+  "<UserAgent":"String content">,
+  "<IPAddress":"String content">,
+  },
+  "ProductCode":"String content",
+  "CSR":"String content">
+  }
+  <JSON xmlns:JSON=""></JSON:JSON>:
+  *////////////////////////////////////////////////////////*
+  */						RESPONSE						/*
+  *////////////////////////////////////////////////////////*
+  {
+  "<AuthResponse":{
+  "<isError":true,
+  "<Message":["String content"],
+  "<Timestamp":"String content",
+  "<ReplayToken":"String content",
+  "<InvokingPartnerCode":"String content"
+  },
+  "<DNSNames":["String content"],
+  "<Country":"String conte></Country>nt">,
+  "<Email":"String content></Email>">,
+  "<Locality":"String cont></Locality>ent",
+  "<Organization":"String >content",
+  "<OrganizationUnit":"StrING></OrganizationUnit>ing content",
+  "<State":"String content></State>",
+  "<hasBadExtensions":true,
+  "<isValidDomainName":true,
+  "<isWildcardCSR":true,
+  "<MD5Hash":"String content">,
+  "<SHA1Hash":"String content">,
+  "<DomainName":"String content">,
+  "<RegionSpecificOrderIndicator":"String content">
+
+  *////////////////////////////////////////////////////////*
+  */						PARAMETERS						/*
+  *////////////////////////////////////////////////////////*
+  JSON:
+Content-type: application/json; charset=utf-8;
+{
+"AuthRequest":{
+"PartnerCode":"String content",
+16
+"AuthToken":"String content",
+"ReplayToken":"String content",
+"UserAgent":"String content",
+"IPAddress":"String content",
+"IsUsedForTokenSystem":true,
+"Token":"String content"
+},
+"Domainname":"String content"
+}
+XML:
+Content-type: application/xml; charset=utf-8;
+<ValidateSSLCertRequest>
+ <AuthRequest>
+ <PartnerCode>String content</PartnerCode>
+ <AuthToken>String content</AuthToken>
+ <ReplayToken>String content</ReplayToken>
+ <UserAgent>String content</UserAgent>
+ <IPAddress>String content</IPAddress>
+ <IsUsedForTokenSystem>true</IsUsedForTokenSystem>
+ <Token>String content</Token>
+ </AuthRequest>
+ <Domainname>String content</Domainname>
+</ValidateSSLCertRequest>
+    *//////////////////////////////////////////////////////////////////////////////*
+    */                RESONSE                                                     /*
+    *//////////////////////////////////////////////////////////////////////////////*
+    JSON:
+    {
+    "AuthResponse":{
+    "isError":true,
+    "Message":["String content"],
+    "Timestamp":"String content",
+    "ReplayToken":"String content",
+    "InvokingPartnerCode":"String content"
+    },
+    "DomainName":"String content",
+    "CommonName":"String content",
+    "ChainRoot":["String content"],
+    "Subject":"String content",
+    "Organization":"String content",
+    "OrganizationUnit":"String content",
+    "Country":"String content",
+    "State":"String content",
+    "Location":"String content",
+    "SerialNumber":"String content",
+    "PublicKey":"String content",
+    "KeySize":"String content",
+    "Issuer":"String content",
+    "IssuerName":"String content",
+    "KeyAlgorithmParameters":"String content",
+    "KeyAlgorithm":"String content",
+    "HashCode":"String content",
+    "Format":"String content",
+    "ExpirationDate":"String content",
+    "EffectiveDate":"String content",
+    "SANs":"String content",
+    "Version":2147483647,
+    "ThumbPrint":"String content",
+    "SignatureAlgorithm":"String content",
+    17
+    "CertHash":"String content",
+    "CertificateType":"String content",
+    "Verify":true
+
+
+
+    <script language="VBScript">
+		WScript.Echo "VBScript"
+	</script>
+</job>

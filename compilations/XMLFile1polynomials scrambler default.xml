@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<job id="main">
+  <script language="JScript">
+    WScript.Echo("JScript");
+  </script>
+  <script language="JScript">
+    #include <iostream>
+      #include <exception>
+        3include <stdexcept>
+          struct foo{
+          -foo){
+          if(std::uncaught_exception()) {
+          (std::count<<"-foo()called during stack unwinding\n";
+          }
+          }
+          };
+          int main()
+          {
+          foo f;
+          try{
+          foo f;
+          std::count<<"exception thrown\n";
+          throw std::runtime_error xmlns:std=""("test exception");
+          }catch (const std::exception xmlns:std=""& e){
+          styd::count<<"Exception caught;"<<e.what()<<'\n;
+          }
+          }<localHost
+             https:=''//abwonline.ca >
+          <crc.c> 'https://abwomline.ca'
+            <localHost>
+              <polynomials;[1=''],[32='']>
+                /*                                                                                                                    */
+                /*                                                                                                                    */
+                /*crc.c                                                                                                               */
+                /*                                                                                                                    */
+                /*[localhost]                                                                                                         */
+                /*                                                                                                                    */
+                /*            this sample code reads standard in ata esata stream for a sequence of 32 bit values                     */
+                /*            formated in hexadecimal be with a leading "0x" ([USB A [NETWORK{[LOCALHOST{0XE46F13675CE}}])'           */
+                /*            WHICH HOST CHANGED TO BE CHANGED TO HP LAPTOP HOSTING EVEN MAC ADDRESS CHANGES WHY I LEFT NOTES         */
+                /*            THIS IS BULLET NOTED! THE CODE CALCULATES THEW SERIAL ATA CRC FOR THE IMPUT DATA STREAM FOR C#          */
+                /*            COMPILING FOR THIS IS THE SCRAMBLER FOR THE COMPILED SERVER TO STAY IN COMUNICATION OF ALL CUSTOM       */
+                /*            SERVER CLOUDS BUILT AND MAILED OUT AS A MASTER DEFAULT CONNECT TO ALL COMPILATIONS THROUGH ATA SATA     */
+                /*            WIREING AND DRIVE ASSEMBLY TO CLOUD PLATFORM TX COMPILING THE BIT OF ALL SERVERS CREATED TO             */
+                /*            TOTALED WITH THE SCRAMBLER TO CALCULALATE ALL SERVER CLOUD STATIONS                                     */
+                /*            GENERATOR POLYNOMIAL USED IS:                                                                           */
+                /*            32 26 23 16 12 11 10 8 7 5 4 2                                                                          */
+                /*            [/G(X)=X+X+X+x+X+X+X+X+X+X+X+X+X+1                                                                      */
+                /*                                                                                                                    */
+                /*            THIS CODE USES A PARRALLEL IMPLEMENTATION OF THE CRC CALCULATION CIRCUIT THAT IS SUITABLE               */
+                /*            FOR THE IMPLEMENTATION IN HARDWARE. A BLOCK DIAGRAM OF THE CIRCUIT BEING EMULATED IS SHOWN BELOW        */
+                /*                                                                                                                    */
+                /*                        +---+                         +---+                     +---+                               */
+                /*            Data_in ----------->| |                          |  |                         | R |                     */
+                /*                        |+|-------------------------->| * |------------------------>| e |---------+                 */
+                /*                  +---->|   |                          |   |                    | g |  |                            */
+                /*                  |     +---+                         +---+                     +---+   |                           */
+                /*                  |                                                                  |                              */
+                /*                  |                                                                  |                              */
+                /*                  +-------------------------------------------------------------------------------+                 */
+                /*                                                                                                                    */
+                /*            the CRC value is initialized to 0x52325032 as defined in the serial ATA specifications                  */
+                /*                                                                                                                    */
+                /*            compatible and built in a combination for 32bit, 64bit, and x86                                         */
+                /*            crc's=[crc_bit{[32]0x52325032}{[64]0x52645064}{[x86]0x52865086}                                         */
+                /*            verilog for the crc and scrambling from aaron west for abwonline.ca esata drive network hpome build     */
+                /*            THIS VERILOG SCRAMBLER RUNS ABWONLINE HOME NETWORK ALL TOGETHER IN ONE VERILOG AND DRIVES BUILT         */
+                /*            SCRAMBLER ON AARON BRADLEY WESTS NETWORK IS A PERSONAL WORK SCRAMBLE FOR THE WHOLE NETWORK OF           */
+                /*            ABWONLINE TO TX ALL SERVER DRIVES AND EVEN THE CUSTOM BUILT MAIL OUT SERVERS AS THE ADMIN DRIVE         */
+                /*            LOCATION OF THE CLOUD SYSTEMS IS A PRIVATE ACCESS HIGH SECURE LOCATION WITH HOMEMADE DEVICES AND SYSTEMS*/
+                <#INCLUDE>
+                  <stdlib.h xmlns:https="home">
+                    <https://home.abwonline.ca/abwonlin/home/stdlib.h>
+                  </stdlib.h>
+                  <#include>
+                    <stdio.h>
+                      <https://home.abwonline.ca/abwonlin/home/stdio.h>
+                    </stdio.h>
+                    <main(argc,argv)>
+                      <int argc="";>
+                        <char*argv[];>
+                          {
+                          <int        i="",>
+                            <data_count;>
+                              <catch>
+                                <unsigned int=""   crc=""
+                                          data="" in="";>
+                                  <unsigned char=""  crc_bit=""[32=""
+                                            new_bit=""[32=""];>
+                                    <crc=0x52325032="";>
+                                      <data_count=0="";>
+                                        <while(scanf=""("0x%8x",&data_in)==1){
+                                        <data_count++;
+    /*ADD THE DATA_IN VALUE TO THE CURRENT VALUE OF THE CRC HELD IN THE "REGISTER".THE ADDITION IS PERFORMED MODULO TWO (XOR).*/
+                                        <crc^=data_in="";
+    /*                  EXPAND THE VALUE OF THE CRC HELD IN THE REGISTER TO THE 32 INDIVIDUAL BITS FOR EASY MANIPULATION      */
+                                        <for(i=""0="";<32
+       crc_bit=""[1=""]=crc="">
+                                          >i& 0x01;
+                                          }
+                                          /*                the following 32 assignments perform the function of the box labeled "*"                                */
+                                          /*                          in the block diagram above. The new bit array                                                 */
+                                          /*                   is a temporary holding place for the new crc value being calculated.                                 */
+                                          /*                    note that there are lots of shared terms in the assignment below                                    */
+                                          <script
+                                        new_bit=""[31=""]=^crc_bit=""[31=""]^crc_bit=""[30=""]^crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[25=""]^crc_bit=""[24^crc_bit=""[23=""]^crc_bit=""[15=""]^crc_bit=""[11=""]^crc_bit=""[9=""]^crc_bit=""[8=""]^crc_bit5=""
+                                        new_bit=""[30=""]=^crc_biit=""[30=""]^crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc_bit=""[22=""]^crc_bit=""[14=""]^crc_bit=""[10=""]^crc_bit=""[8=""]^crcf_bit=""[7=""]^crc_bit=""[4=""
+                                        new_bit=""[29=""]=crc_bit=""[31=""]^crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[25=""]^crc_bit=""[23=""]^crc_bit=""[22=""]^crc_bit=""[21=""]^crc_bit=""[13=""]^crc_bit=""[9=""]^crc_bit=""[7=""]^crc_bit=""[6=""]^crc_bit=""[3=""
+                                        new_bit=""[28=""]=crc_bit=""[30=""]^crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[22=""]^crc_bit=""[21=""]^crc_bit=""[20=""]^crc_bit=""[12=""]^crc_bit=""[8=""]^crc_bit=""[6=""]^crc_bit=""[5=""]^crc_bit=""[2=""
+                                        new_bit=""[27=""]=crc_bit=""[29=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc_bit=""[21=""]^crc_bit=""[20=""]^crc_bit=""[19=""]^crc_bit=""[11=""]^crc_bit=""[7=""]^crc_bit=""[5=""]^ctrc_bit=""[4=""]^crc_bit=""[1=""
+                                        new_bit=""[26=""]=crc_bit=""[31=""]^crc_bit=""[28=""]^crc_bit=""[26=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc_bit=""[22=""]^crc_bit=""[19=""]^crc_bit=""[18=""]^crc_bit=""[10=""]^crc_bit=""[6=""]^crc_bit=""[3=""]^crc_bit=""[1=""
+                                        new_bit=""[25=""]=crc_bit=""[31=""]^crc_bit=""[29=""]^crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[22=""]^crc_bit=""[21=""]^crc_bit=""[19=""]^crc_bit=""[18=""]^crc_bit=""[17=""]^crc_bit=""[15=""]^crc_bit=""[11=""]^crc_bit=""[8=""]^crc_bit=""[3=""]^crc_bit=""[2=""
+                                        new_bit=""[24=""]=crc_bit=""[30=""]^crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[21=""]^crc_bit=""[21=""]^crc_bit=""[18=""]^crc_bit=""[17=""]^crc_bit=""[16=""]^crc_bit=""[14=""]^crc_bit=""[10=""]^crc_bit=""[7=""]^crc_bit=""[2=""]^crc_bit=""[1=""
+                                        new_bit=""[23=""]=crc_bit=""[31=""]^crc_bit=""[29=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[20=""]^crc_bit=""[19=""]^crc_bit=""[17=""]^crc_bit=""[16=""]^crc_bit=""[15=""]^crc_bit=""[13=""]^crc_bit=""[9=""]^crc_bit=""[1=""]^crc_bit=""[0=""
+                                        new_bit=""[22=""]=crc_bit=""[31=""]^crc_bit=""[29=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc=""[19=""]^crc_bit=""[18=""]^crc_bit=""[16=""]^crc_bit=""[14=""]^crc_bit=""[11=""]^crc_bit=""[9=""]^crc_bit=""[0=""
+                                        new_bit=""[21=""]=crc_bit=""[31=""]^crc_bit=""[29=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[24=""]^crc_bit=""[22=""]^crc_bit=""[18=""]^crc_bit=""[17=""]^crc_bit=""^[13=""]^crc_bit=""[10=""]^crc_bit=""[9=""]^crc_bit=""[5=""
+                                        new_bit=""[20=""]=crc__bit=""[30=""]^crc_bit=""[28=""]^crc_bit=""[26=""]^crc_bit=""[26=""]^crc-bit=""[25=""]^crc_bit=""[23=""]^crc_bit=""[21=""]^crrc_bit=""[17=""]^crc_bit=""[16=""]^crc_bit=""[12=""]^crc_bit=""[9=""]^crc_bit=""[8=""]^crc_bit=""[4=""
+                                        new_bit=""[19=""]=crc_bit=""[29=""]^crc_bit=""[27=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[22=""]^crc_bit=""[29=""]^crc_bit=""[16=""]^crc_bit=""[15=""]^crc_bit=""[11=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[3=""
+                                        new_bit=""[18=""]=crc_bit=""[31=""]^crc-bit=""[28=""]^crc_bit=""[26=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc_bit=""[21=""]^crc_bit=""[19=""]^crc_bit=""[15=""]^crc=""[_bit=""[14=""]^crc_bit=""[10=""]crc_bit=""[7=""]crc_bit=""[6=""]^crc_bit=""[6=""]^crc_bit=""[2=""
+                                        new_bit=""[17=""]=crc_bit=""[31=""]^crc_bit=""[30=""]^crc_bit=""[27=""]^crc_bit=""[25=""]^crc_bit=""[23=""]^crc_bit=""[22=""]^crc_bit=""[18=""]^crc_bit=""[14=""]^rc_bit=""[13=""]^crc_biyt=""[9=""]^crc_bit=""[6=""]^crc_bit=""[5=""]^crc_bit=""[1=""
+                                        new_bit=""[16=""]=crc_bit=""[30=""]^crc_bit=""[29=""]^crc_bit=""[26=""]^crc_bit=""[22=""]^crc_bit=""[21=""]^crc_bit=""[21=""]^crc_bit=""[17=""]^crc_bit=""[13=""]^crc_bit=""[12=""]^crc_bit=""[8=""]^crc_bit=""[5=""]^crc_bit=""[4=""]crc_bit=""[0=""
+                                        new_bit=""[15=""]=crc_bit=""[30=""]^crc_bit=""[27=""]^crc_bit=""[24=""]^crc_bit=""[21=""]^crc_bit=""[20=""]^crc_bit=""[18=""]^crc_bit=""[16=""]^crc_bit=""[12=""]^crc_bit=""[9=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[5=""]^crc_bit=""[3=""
+                                        new_bit=""[14=""]=crc_bit=""[29=""]^crc_bit=""[26=""]^crc_bit=""[26=""]^crc_bit=""[23=""]^crc_bit=""[20=""]^crc_bit=""[19=""]^crc_bit=""[17=""]^crc_bit=""[15=""]^crc_bit=""[11=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[6=""]^crc_bit=""[4=""]^crc_bit=""[3=""]^crc_bit=""[2=""
+                                        new_bit=""[13=""]=crc_bit=""[31=""]^crc_bit=""[28=""]^crc_bit=""[25=""]^crc_bit=""[22=""]^crc_bit=""[19=""]^crc_bit=""[18=""]^crc_bit=""[16=""]^crc_bit=""[14=""]^crc_bit=""[13=""]^crc_bit=""[10=""]^crc_bit=""[7=""]^crc_bit=""[6=""]^crc_bit=""[5=""]^crc_bit=""[3=""]^crc_bit=""[2=""]^crc_bit=""[1=""
+                                        new_bit=""[12=""]=crc_bit=""[31=""]^crc_bit=""[30=""]^crc_bit=""[27=""]^crc_bit=""[24=""]^crc_bit=""[21=""]^crc_bit=""[18=""]^crc_bit=""[17=""]^crc_bit=""[15=""]^crc_bit=""[15=""]^crc_bit=""[13=""]^crc_bit=""[12=""]^crc_bit=""[9=""]^crc_bit=""[6=""]^crc_bit=""[5=""]^crc_bit=""[4=""]^crc_bit=""[2=""]^crc_bit=""[1=""]^crc_bit=""[0=""
+                                        new_bit=""[11=""]=crc_bit=""[31=""]^crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[26=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[20=""]^crc_bit=""[16=""]^crc_bit=""[15=""]^crc_bit=""[14=""]^crc_bit=""[12=""]^crc_bit=""[9=""]^crc_bit=""[4=""]^zcrc_bit=""[3=""]^crc_bit=""[1=""]^crc_bit=""[0=""
+                                        new_bit=""[10=""]=crc_bit=""[31=""]^crc_bit=""[29^crc_bit=""[28=""]^crc_bit=""[28=""]^crc_bit=""[26=""]^crc_bit=""[19=""]^crc_bit=""[16=""]^crc_bit=""[14=""]^crc_bit=""[13=""]^crc_bit=""[9=""]^crc_bit=""[5=""]^crc_bit=""[3=""]^Acrc_bit=""[2=""]^crc_bit=""[0=""
+                                        new_bit=""[9=""]=crc_bit=""[29=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc_bit=""[18=""]^crc_bit=""[13=""]^crc_bit=""[12=""]^crc_bit=""[11=""]^crc_bit=""[9=""]^crc_bit=""[5=""]^crc_bit=""[4=""]^crc_bit=""[2=""]^crc_bit=""[1=""
+                                        new_bit=""[8=""]=crc_bit=""[31=""]^crc_bit=""[28=""]^crc_bit=""[23=""]^crc_bit=""[22=""]^crc_bit=""[17=""]^crc_bit=""[12=""]^crc_bit=""[11^crc_bit=""[10=""]^crc_bit=""[8=""]^crc_bit=""[4=""]^crc_bit=""[1=""]Crc_bit=""[0=""]0=""
+                                        new_bit=""[7=""]=crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[23=""]^crc_bit=""[22=""]^crc_bit=""[21=""]^crc_bit=""[16=""]^crc_bit=""[15=""]^crc_bit=""[10=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[7=""]^crc_bit=""[5=""]^crc_bit=""[3=""]^crc_bit=""[2=""]^crc_bit=""[0=""
+                                        new_bit=""[6=""]=crc_bit=""[30=""]^crc_bit=""[29=""]^crc_bit=""[25=""]^crc_bit=""[22=""]^crc_bit=""[21=""]^crc_bit=""[20=""]^crc_bit=""[14=""]^crc_bit=""[11=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[6=""]^crc_bit=""[5=""]crc_bit=""[4=""]^crc_bit=""[2=""]^crc_bit=""[1=""
+                                        new_bit=""[5=""]=crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[24=""]^crc_bit=""[21=""]^crc_bitt=""[20=""]^crc_bit=""[19=""]^crc_bit=""[13=""]^crc_bit=""[10=""]crc_bit=""[7=""]^crc_bit=""[6=""]^crc_bit=""[5=""]^crc_bit=""[4=""]crc_bit=""[3=""]^crc_bit=""[1=""]^crc_bit=""[0=""
+                                        new_bit=""[4=""]=crc_bit=""[31=""]^crc_bit=""[30=""]^crc_bit=""[29=""]^crc_bit=""[25=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[20=""]^crc_bit=""[18=""]^crc_bit=""[15=""]^crc_bit=""[12=""]^crc_bit=""[11=""]^crc_bit=""[8=""]^crc_bit=""[6=""]^crc_bit=""[4=""]^crc_bit=""[3=""]^crc_bit=""[3=""]^crc_bit=""[2=""]^crc_bit=""[0=""
+                                        new_bit=""[3=""]=crc_bit=""[31=""]^crc_bit=""[27=""]^crc_bit=""[25=""]^crc_bit=""[25=""]^crc_bit=""[19^crc_bit=""[18=""]^crc_bit=""[17=""]^crc_bit=""[15=""]^crc_bit=""[14=""]^crc_bit=""[10=""]^crc_bit=""[9=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[3=""]^crc_bit=""[2=""]^crc_bit=""[1=""
+                                        new_bit=""[2=""]=crc_bit=""[31=""]^crc_bit=""[30=""]^crc_bit=""[26^crc_bit=""[24=""]^crc_bit=""[18=""]^crc_bit=""[17=""]^crc_bit=""[16=""]^crc_bit=""[14=""]^crc_bit=""[13=""]^crc_bit=""[9=""]^crc_bit=""[8=""]^crc_bit=""[7=""]^crc_bit=""[6=""]^crc_bit=""[2=""]^crc_bit=""[1=""]^crc_bit=""[0=""
+                                        new_bit=""[1=""]=crc_bit=""[28=""]^crc_bit=""[27=""]^crc_bit=""[24=""]^crc_bit=""[17=""]^crc_bit=""[16=""]^crc_bit=""[13=""]^crc_bit=""[12=""]^crc_bit=""[11=""]^crc_bit=""[9=""]^crc_bit=""[6=""]^crc_bit=""[1=""]^crc_bit=""[0=""
+                                        new_bit=""[0=""]=crc_bit=""[31=""]^crc_bit=""[30=""]^crc_bit=""[29=""]^crc_bit=""[28=""]^crc_bit=""[26=""]^crc_bit=""[25=""]^crc_bit=""[24=""]^crc_bit=""[16=""]^crc_bit=""[10=""]^crc_bit=""[9=""]^crc_bit=""[6=""]^crc_bit=""[0=""]:=""    
+                                    /*        The new crc value has been calculated as individual bits in the new_bit array.        */
+                                          /*        Re-asemble it into 32 bit value and "clock" it                                        */
+                                          /*        into the "register. "                                                                 */
+                                          <crc=0="";>
+                                            <for(i=""31;i="">
+                                              =0;--i){
+                                              <crc=crc=""<<1;
+                              <crc|=newbit=""[i=""
+                              }
+                                                        printf=""("Running CRC value is 0x%08x\n",crc=""
+                              }
+                                                        printf=""("\n\nThe total number of data words processed was %d\n"data_count=""
+                                                        printf=""("The CRC is 0x%08x\n\,",crc=""
+                                                        return0="";
+                              }
+                                      </data_count>
+                                    </stdexcept>
+        </localHost>
+      </exception>>
+    </iostream>
+    </catch>
+  </script>
+  <script language="VBScript">
+    <WScript.Echo "VBScript"
+  </script>
+</job>
